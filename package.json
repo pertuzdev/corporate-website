@@ -19,7 +19,11 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "gatsby-plugin-styled-components": "^3.10.0",
+    "standard": "^16.0.3",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^2.0.3",
+    "twin.macro": "^2.2.3"
   },
   "keywords": [
     "gatsby"
@@ -33,6 +37,16 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/**"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   },
   "repository": {
     "type": "git",
