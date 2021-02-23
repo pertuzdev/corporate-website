@@ -9,23 +9,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import NavBar from './NavBar'
 import './layout.css'
+import '../styles/globalStyles'
+
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`}/>
+      <NavBar />
       <div
         style={{
           margin: `0 auto`,
@@ -33,7 +25,10 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main>
+          {children}
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est hic magnam numquam officiis? Alias debitis dolor doloremque dolores facere iste necessitatibus neque perspiciatis quaerat, quisquam quos velit! Fuga, mollitia.
+        </main>
         <footer
           style={{
             marginTop: `2rem`,
