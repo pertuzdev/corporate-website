@@ -27,6 +27,10 @@ const Layout = ({ children }) => {
       >
         <main>
           {children}
+          <ul>
+            <li>1</li>
+            <li>2</li>
+          </ul>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est hic magnam numquam officiis? Alias debitis dolor doloremque dolores facere iste necessitatibus neque perspiciatis quaerat, quisquam quos velit! Fuga, mollitia.
         </main>
         <footer

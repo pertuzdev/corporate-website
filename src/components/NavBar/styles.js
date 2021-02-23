@@ -28,7 +28,7 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: Quicksand;
   display: flex;
   align-items: center;
@@ -40,8 +40,8 @@ export const BoldSpan = styled.span`
 
 export const NavIcon = styled.img`
   margin-right: 0.5rem;
-  width: 34.5px;
-  height: 46px;
+  width: 26px;
+  height: 34.67px;
 `
 
 export const MobileIcon = styled.div`
