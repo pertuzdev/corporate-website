@@ -3,10 +3,11 @@ import { FaMagento } from 'react-icons/fa'
 import { Link } from 'gatsby'
 import { Container } from '../../styles/globalStyles'
 
-
 export const Nav = styled.nav`
   background: #59358B;
-  height: 80px;
+  border-radius: 0 0 20px 20px;
+  /*height: 80px;*/
+  padding: 12px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +20,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  /*height: 80px;*/
   ${Container}
 `
 
@@ -66,19 +67,21 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 90vh;
+    width: 96%;
+    height: 86vh;
     position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
+    top: 67px;
+    left: ${({ click }) => (click ? '2%' : '-100%')};
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px 2px rgb(0 0 0 / 92%);
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: #59358B;
   }
 `
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 60px;
   border-bottom: 2px solid transparent;
   &:hover {
     border-bottom: 2px solid #4b59f7;
