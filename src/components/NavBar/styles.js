@@ -5,9 +5,8 @@ import { Container } from '../../styles/globalStyles'
 
 export const Nav = styled.nav`
   background: #59358B;
-  border-radius: 0 0 20px 20px;
   /*height: 80px;*/
-  padding: 12px 0;
+  padding: 16px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +29,7 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: Quicksand;
+  font-family: Quicksand,serif;
   display: flex;
   align-items: center;
 `
@@ -67,13 +66,11 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    width: 96%;
-    height: 86vh;
+    width: 100%;
+    height: 90vh;
     position: absolute;
     top: 67px;
-    left: ${({ click }) => (click ? '2%' : '-100%')};
-    border-radius: 20px;
-    box-shadow: 0px 0px 17px 2px rgb(0 0 0 / 92%);
+    left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
     background: #59358B;
