@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
-import { Button, Container, colors } from '../../styles/globalStyles'
+import { Button, Container, Colors } from '../../styles/globalStyles'
 
 export const CoverContainer = styled.div`
   ${tw`py-20 px-0`};
-  background-color: ${colors['light-white']};
+  background-color: ${Colors['lighter-white']};
 `
 export const CoverWrapper = styled(Container)`
   display: flex;

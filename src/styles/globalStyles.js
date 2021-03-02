@@ -1,13 +1,14 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-export const colors = {
+export const Colors = {
   'primary-purple': '#59358B',
   'secondary-blue': '#1900FF',
   'gray-background': '#E5E5E5',
   'light-white': '#F7F7F7',
+  'lighter-white': '#fafaff',
   'light-blue': '#62C5E3'
 }
-console.log(colors['primary-purple']);
+console.log(Colors['primary-purple']);
 const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
@@ -33,10 +34,10 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 6px;
-  background: ${({ primary }) => (primary ? colors['primary-purple'] : '#fff')};
+  background: ${({ primary }) => (primary ? Colors['primary-purple'] : '#fff')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: ${({ primary }) => (primary ? '#fff' : colors['primary-purple'])};
+  color: ${({ primary }) => (primary ? '#fff' : Colors['primary-purple'])};
   font-weight: 500;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
