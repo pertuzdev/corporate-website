@@ -83,7 +83,7 @@ export const FooterEmailContact = styled.div`
 `
 
 export const FooterSubHeading = styled.p`
-  font-family: 'Quicksands', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
   'Lucida Sans', Arial, sans-serif;
   margin-bottom: 40px;
   line-height: 40px;

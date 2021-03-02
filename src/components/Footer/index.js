@@ -49,7 +49,7 @@ function Footer () {
         <FooterSubHeading>
           ¿Interesado en nuestros servicios?
         </FooterSubHeading>
-        <FooterButton primary>Contáctanos</FooterButton>
+        <FooterButton>Contáctanos</FooterButton>
       </FooterSubscription>
       <FooterContactAndNav>
         <ContactInfoContainer>

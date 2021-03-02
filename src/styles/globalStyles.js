@@ -1,5 +1,13 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
+export const colors = {
+  'primary-purple': '#59358B',
+  'secondary-blue': '#1900FF',
+  'gray-background': '#E5E5E5',
+  'light-white': '#F7F7F7',
+  'light-blue': '#62C5E3'
+}
+console.log(colors['primary-purple']);
 const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
@@ -25,10 +33,10 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 6px;
-  background: ${({ primary }) => (primary ? '#fff' : '#0467FB')};
+  background: ${({ primary }) => (primary ? colors['primary-purple'] : '#fff')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: #59358B;
+  color: ${({ primary }) => (primary ? '#fff' : colors['primary-purple'])};
   font-weight: 500;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
@@ -37,9 +45,9 @@ export const Button = styled.button`
   &:hover {
        transition: all 0.3s ease-out;
        background: #fff;
-       background-color: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')};
+       background-color: ${({ primary }) => (primary ? '#3C235D' : '#4B59F7')};
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
     width: 100%;
 }
 `
