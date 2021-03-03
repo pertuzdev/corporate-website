@@ -1,19 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles/globalStyles'
 
-
-export const ServicesTitle = styled.h2`
-  font-family: 'Inter',serif;
-  font-size: 48px;
-  text-align: center;
-  font-weight: bold;
-  color: ${Colors['secondary-blue']};
-  margin-bottom: 64px;
-  @media screen and (max-width: 640px) {
-    font-size: 32px;
-    margin-bottom: 40px;
-  }
-`
 export const ServicesItems = styled.div`
   display: flex;
   flex-wrap: wrap;

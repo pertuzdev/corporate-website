@@ -1,7 +1,6 @@
 import React from 'react'
 
 import {
-  ServicesTitle,
   ServicesItems,
   ServiceItem,
   Img,
@@ -9,7 +8,7 @@ import {
   ServiceDescription,
 } from './styles'
 
-import { OnContainer, SectionWrapper } from '../../styles/globalStyles'
+import { OnContainer, SectionWrapper, Colors, Title } from '../../styles/globalStyles'
 
 import appIcon from '../../assets/img/app-icon.svg'
 import webIcon from '../../assets/img/web-icon.svg'
@@ -22,9 +21,9 @@ export default function ServicesInHomePage () {
   return (
     <OnContainer>
       <SectionWrapper>
-        <ServicesTitle>
+        <Title color={Colors['secondary-blue']} marginBottom>
           SERVICIOS
-        </ServicesTitle>
+        </Title>
         <ServicesItems>
           <ServiceItem>
             <Img src={webIcon} alt='WebIcon' />

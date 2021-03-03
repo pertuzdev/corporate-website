@@ -10,17 +10,6 @@ export const PhraseSectionRow = styled.div`
     margin-bottom: ${({ marginBottom }) => marginBottom && '40px'};
   }
 `
-export const PhraseSectionTitle = styled.h2`
-  font-family: 'Inter', serif;
-  line-height: 1.1;
-  font-size: 48px;
-  text-align: center;
-  font-weight: bold;
-  color: ${Colors['secondary-blue']};
-  @media screen and (max-width: 640px) {
-    font-size: 32px;
-  }
-`
 export const PhraseSectionDescription = styled.p`
   text-align: center;
   font-size: 1.7rem;

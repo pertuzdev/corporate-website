@@ -1,15 +1,15 @@
 import React from 'react'
 
 import rocket from '../../assets/img/rocket.png'
-import { PhraseSectionRow, PhraseSectionTitle, Img, PhraseSectionDescription } from './styles'
-import { OnContainer, SectionWrapper, Colors } from '../../styles/globalStyles'
+import { PhraseSectionRow, Img, PhraseSectionDescription } from './styles'
+import { OnContainer, SectionWrapper, Title, Colors } from '../../styles/globalStyles'
 
 export default function PhraseSection () {
   return (
     <OnContainer color={Colors['light-white']}>
       <SectionWrapper>
         <PhraseSectionRow marginBottom>
-          <PhraseSectionTitle>IMPULSAMOS TU MARCA</PhraseSectionTitle>
+          <Title color={Colors['secondary-blue']}>IMPULSAMOS TU MARCA</Title>
         </PhraseSectionRow>
         <PhraseSectionRow marginBottom>
           <PhraseSectionDescription>

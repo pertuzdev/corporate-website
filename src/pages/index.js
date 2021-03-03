@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 import Cover from '../components/Cover'
 import Services from '../components/ServicesInHomePage'
 import PhraseSection from '../components/PhraseSection'
+import OurWork from '../components/OurWork'
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Cover />
     <Services/>
     <PhraseSection />
+    <OurWork />
   </Layout>
 )
 

@@ -51,6 +51,19 @@ export const SectionWrapper = styled(Container)`
     padding-left: 30px;
   }
 `
+export const Title = styled.h2`
+  font-family: 'Inter', serif;
+  line-height: 1.1;
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  color: ${({ color }) => color || 'unset'};
+  margin-bottom: ${({ marginBottom }) => marginBottom ? '64px' : 'unset'};
+  @media screen and (max-width: 640px) {
+    font-size: 32px;
+    margin-bottom: ${({ marginBottom }) => marginBottom ? '40px' : 'unset'};
+  }
+`
 
 export const Button = styled.button`
   border-radius: 6px;
