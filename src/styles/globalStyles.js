@@ -32,6 +32,26 @@ export const Container = styled.div`
   }
 `
 
+export const OnContainer = styled.section`
+  background-color: ${({ color }) => color || 'unset'};
+  padding: 140px 0;
+  @media screen and (max-width: 768px) {
+    padding: 80px 0;
+  }
+`
+export const SectionWrapper = styled(Container)`
+  padding-right: 120px;
+  padding-left: 120px;
+  @media screen and (max-width: 1280px) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  @media screen and (max-width: 640px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+`
+
 export const Button = styled.button`
   border-radius: 6px;
   background: ${({ primary }) => (primary ? Colors['primary-purple'] : '#fff')};

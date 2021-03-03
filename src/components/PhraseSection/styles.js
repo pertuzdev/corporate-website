@@ -1,25 +1,6 @@
 import styled from 'styled-components'
-import { Colors, Container } from '../../styles/globalStyles'
+import { Colors } from '../../styles/globalStyles'
 
-export const PhraseSectionContainer = styled.section`
-  background-color: ${Colors['light-white']};
-  padding: 140px 0;
-  @media screen and (max-width: 768px) {
-    padding: 80px 0;
-  }
-`
-export const PhraseSectionWrapper = styled(Container)`
-  padding-right: 120px;
-  padding-left: 120px;
-  @media screen and (max-width: 1280px) {
-    padding-right: 80px;
-    padding-left: 80px;
-  }
-  @media screen and (max-width: 640px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-`
 export const PhraseSectionRow = styled.div`
   display: flex;
   flex-direction: column;

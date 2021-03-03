@@ -1,8 +1,6 @@
 import React from 'react'
 
 import {
-  ServicesContainer,
-  ServicesWrapper,
   ServicesTitle,
   ServicesItems,
   ServiceItem,
@@ -10,6 +8,8 @@ import {
   ServiceItemTitle,
   ServiceDescription,
 } from './styles'
+
+import { OnContainer, SectionWrapper } from '../../styles/globalStyles'
 
 import appIcon from '../../assets/img/app-icon.svg'
 import webIcon from '../../assets/img/web-icon.svg'
@@ -20,8 +20,8 @@ import socialMediaIcon from '../../assets/img/social-media-icon.svg'
 
 export default function ServicesInHomePage () {
   return (
-    <ServicesContainer>
-      <ServicesWrapper>
+    <OnContainer>
+      <SectionWrapper>
         <ServicesTitle>
           SERVICIOS
         </ServicesTitle>
@@ -76,7 +76,7 @@ export default function ServicesInHomePage () {
             </ServiceDescription>
           </ServiceItem>
         </ServicesItems>
-      </ServicesWrapper>
-    </ServicesContainer>
+      </SectionWrapper>
+    </OnContainer>
   )
 }

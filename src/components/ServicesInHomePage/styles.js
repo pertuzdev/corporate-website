@@ -1,25 +1,7 @@
 import styled from 'styled-components'
-import { Colors, Container } from '../../styles/globalStyles'
+import { Colors } from '../../styles/globalStyles'
 
-export const ServicesContainer = styled.section`
-  /*background-color: ${Colors['light-white']};*/
-  padding: 140px 0;
-  @media screen and (max-width: 768px) {
-    padding: 80px 0;
-  }
-`
-export const ServicesWrapper = styled(Container)`
-  padding-right: 120px;
-  padding-left: 120px;
-  @media screen and (max-width: 1280px) {
-    padding-right: 80px;
-    padding-left: 80px;
-  }
-  @media screen and (max-width: 640px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-`
+
 export const ServicesTitle = styled.h2`
   font-family: 'Inter',serif;
   font-size: 48px;
