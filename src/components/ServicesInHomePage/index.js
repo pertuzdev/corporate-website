@@ -23,7 +23,7 @@ export default function ServicesInHomePage () {
     <ServicesContainer>
       <ServicesWrapper>
         <ServicesTitle>
-          SERVICES
+          SERVICIOS
         </ServicesTitle>
         <ServicesItems>
           <ServiceItem>

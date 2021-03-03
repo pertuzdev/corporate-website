@@ -15,7 +15,7 @@ export const ServicesWrapper = styled(Container)`
     padding-right: 80px;
     padding-left: 80px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -74,12 +74,17 @@ export const Img = styled.img`
   display: inline-block;
   width: 124px;
   height: 121.23px;
+  @media screen and (max-width: 640px) {
+    width: 104px;
+    height: 101.23px;  
+  }
 `
 export const ServiceItemTitle = styled.p`
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 16px;
   color: #514e4e;
+  text-align: center;
 `
 export const ServiceDescription = styled.p`
   font-size: 0.9rem;
