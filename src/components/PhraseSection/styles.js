@@ -5,13 +5,13 @@ export const PhraseSectionRow = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: ${({ marginBottom }) => marginBottom && '64px'};
   @media screen and (max-width: 640px) {
-    margin-bottom: 40px;
+    margin-bottom: ${({ marginBottom }) => marginBottom && '40px'};
   }
 `
 export const PhraseSectionTitle = styled.h2`
-  font-family: 'Inter',serif;
+  font-family: 'Inter', serif;
   line-height: 1.1;
   font-size: 48px;
   text-align: center;
@@ -26,7 +26,7 @@ export const PhraseSectionDescription = styled.p`
   font-size: 1.7rem;
   font-weight: 500;
   @media screen and (max-width: 640px) {
-    font-size: 1.1rem;  
+    font-size: 1.1rem;
   }
 `
 export const Img = styled.img`

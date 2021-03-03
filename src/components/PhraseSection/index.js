@@ -8,14 +8,16 @@ export default function PhraseSection () {
   return (
     <OnContainer color={Colors['light-white']}>
       <SectionWrapper>
-        <PhraseSectionRow marginBottom='64px'>
+        <PhraseSectionRow marginBottom>
           <PhraseSectionTitle>IMPULSAMOS TU MARCA</PhraseSectionTitle>
         </PhraseSectionRow>
-        <PhraseSectionRow>
-          <PhraseSectionDescription>Creamos contenido digital que impacte a tus clientes para que no dejen de hablar de
-            tu marca.</PhraseSectionDescription>
+        <PhraseSectionRow marginBottom>
+          <PhraseSectionDescription>
+            Creamos contenido digital que impacte a tus clientes para que no dejen de hablar de
+            tu marca.
+          </PhraseSectionDescription>
         </PhraseSectionRow>
-        <PhraseSectionRow marginBotton='30px'>
+        <PhraseSectionRow>
           <Img src={rocket} alt='figure_impulsamos_tu_negocio'/>
         </PhraseSectionRow>
       </SectionWrapper>
