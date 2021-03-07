@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const ServicesItems = styled.div`
+export const ServicesList = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
-export const ServiceItem = styled.div`
+export const ServicesItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
