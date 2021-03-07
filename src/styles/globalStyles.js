@@ -6,7 +6,7 @@ export const Colors = {
   'gray-background': '#E5E5E5',
   'light-white': '#F7F7F7',
   'lighter-white': '#fafaff',
-  'light-blue': '#62C5E3'
+  'light-blue': '#2ebbff'
 }
 console.log(Colors['primary-purple']);
 const GlobalStyle = createGlobalStyle`
@@ -39,7 +39,10 @@ export const OnContainer = styled.section`
     padding: 80px 0;
   }
 `
-export const SectionWrapper = styled(Container)`
+export const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-right: 120px;
   padding-left: 120px;
   @media screen and (max-width: 1280px) {

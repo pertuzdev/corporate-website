@@ -6,6 +6,7 @@ import { Button, Container, Colors } from '../../styles/globalStyles'
 export const CoverContainer = styled.div`
   ${tw`py-20 px-0`};
   background-color: ${Colors['lighter-white']};
+  background-image: url("");
 `
 export const CoverWrapper = styled(Container)`
   display: flex;

@@ -5,7 +5,7 @@ import {
   ServiceItem,
   Img,
   ServiceItemTitle,
-  ServiceDescription,
+  ServiceDescription
 } from './styles'
 
 import { OnContainer, SectionWrapper, Colors, Title } from '../../styles/globalStyles'
