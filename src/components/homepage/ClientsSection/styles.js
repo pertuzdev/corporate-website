@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { OnContainer, Title } from '../../styles/globalStyles'
+import { OnContainer, Title } from 'styles/globalStyles'
 
 export const ClientsContainer = styled(OnContainer)`
   width: 100%;

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
-import { Button, Container, Colors } from '../../styles/globalStyles'
+import { Button, Container, Colors } from 'styles/globalStyles'
 
 export const CoverContainer = styled.div`
   ${tw`py-20 px-0`};

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { FaMagento } from 'react-icons/fa'
 import { Link } from 'gatsby'
-import { Colors, Container } from '../../styles/globalStyles'
+import { Colors, Container } from 'styles/globalStyles'
 
 export const Nav = styled.nav`
   background: white;

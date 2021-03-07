@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import Layout from '../components/Layout/layout'
-import SEO from '../components/seo'
-import Cover from '../components/Cover'
-import Services from '../components/ServicesInHomePage'
-import PhraseSection from '../components/PhraseSection'
-import OurWork from '../components/OurWork'
-import Clients from '../components/Clients'
+import Layout from 'components/Layout/layout'
+import SEO from 'components/seo'
+import Cover from 'components/homepage/Cover'
+import Services from 'components/homepage/ServicesSection'
+import PhraseSection from 'components/homepage/PhraseSection'
+import ProjectsSection from 'components/homepage/ProjectsSection'
+import ClientsSection from 'components/homepage/ClientsSection'
 
 const IndexPage = () => (
   <Layout>
@@ -15,8 +14,8 @@ const IndexPage = () => (
     <Cover />
     <Services />
     <PhraseSection />
-    <OurWork />
-    <Clients />
+    <ProjectsSection />
+    <ClientsSection />
   </Layout>
 )
 

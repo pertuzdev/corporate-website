@@ -5,9 +5,9 @@ import { services } from './ServiceData'
 import ServicesItem from './ServicesItem'
 
 import { ServicesList } from './styles'
-import { OnContainer, SectionWrapper, Colors, Title } from '../../styles/globalStyles'
+import { OnContainer, SectionWrapper, Colors, Title } from 'styles/globalStyles'
 
-export default function ServicesInHomePage () {
+export default function ServicesSection () {
   return (
     <OnContainer>
       <SectionWrapper>

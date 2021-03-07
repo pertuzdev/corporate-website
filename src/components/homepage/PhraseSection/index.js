@@ -1,8 +1,8 @@
 import React from 'react'
 
-import rocket from '../../assets/img/rocket.png'
+import rocket from 'assets/img/rocket.png'
 import { PhraseSectionRow, Img, PhraseSectionDescription } from './styles'
-import { OnContainer, SectionWrapper, Title, Colors } from '../../styles/globalStyles'
+import { OnContainer, SectionWrapper, Title, Colors } from 'styles/globalStyles'
 
 export default function PhraseSection () {
   return (

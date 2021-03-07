@@ -1,11 +1,11 @@
-import { Colors } from '../../styles/globalStyles'
+import { Colors } from 'styles/globalStyles'
 
-import webIcon from '../../assets/img/web-icon.svg'
-import appIcon from '../../assets/img/app-icon.svg'
-import consultingIcon from '../../assets/img/consultoria-icon.svg'
-import brandingIcon from '../../assets/img/branding-icon.svg'
-import marketingIcon from '../../assets/img/marketing-icon.svg'
-import socialMediaIcon from '../../assets/img/social-media-icon.svg'
+import webIcon from 'assets/img/web-icon.svg'
+import appIcon from 'assets/img/app-icon.svg'
+import consultingIcon from 'assets/img/consultoria-icon.svg'
+import brandingIcon from 'assets/img/branding-icon.svg'
+import marketingIcon from 'assets/img/marketing-icon.svg'
+import socialMediaIcon from 'assets/img/social-media-icon.svg'
 
 const webDev = {
   color: Colors['light-blue'],

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../styles/globalStyles'
+import { Button } from '../../../styles/globalStyles'
 import {
   FaRegAddressBook,
   FaPhoneAlt,
@@ -35,7 +35,7 @@ import {
   SocialIconLink
 } from './styles'
 
-import logo from '../../assets/img/logo-mobile.svg'
+import logo from 'assets/img/logo-mobile.svg'
 
 function Footer () {
   return (

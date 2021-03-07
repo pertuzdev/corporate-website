@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles/globalStyles'
 
 export const PhraseSectionRow = styled.div`
   display: flex;

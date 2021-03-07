@@ -1,8 +1,8 @@
-import { Colors } from '../../styles/globalStyles'
+import { Colors } from 'styles/globalStyles'
 
-import firstProjectImg from '../../assets/img/almacen_alex.png'
-import secondProjectImg from '../../assets/img/variedades_enrique.jpg'
-import thirdProjectImg from '../../assets/img/bienes_raices.png'
+import firstProjectImg from 'assets/img/almacen_alex.png'
+import secondProjectImg from 'assets/img/variedades_enrique.jpg'
+import thirdProjectImg from 'assets/img/bienes_raices.png'
 
 const firstProject = {
   color: Colors['light-blue'],

@@ -1,14 +1,27 @@
 import React from 'react'
 
-import { CoverContainer, CoverWrapper, CoverRow, CoverSocialMedia, SocialIconLink, TextWrapper, CoverTitle, Highlight, CoverSubTitle, CoverScrollDown, CoverButton, CoverImgWrapper, CoverImg } from './styles'
-import { Button, Container } from '../../styles/globalStyles'
+import {
+  CoverContainer,
+  CoverWrapper,
+  CoverRow,
+  CoverSocialMedia,
+  SocialIconLink,
+  TextWrapper,
+  CoverTitle,
+  Highlight,
+  CoverSubTitle,
+  CoverButton,
+  CoverImgWrapper,
+  CoverImg
+} from './styles'
+
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin
 } from 'react-icons/fa'
 
-import img from '../../assets/img/cover-image.png'
+import img from 'assets/img/cover-image.png'
 
 export default function Cover () {
   return (

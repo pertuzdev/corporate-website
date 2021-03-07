@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FaMagento } from 'react-icons/fa'
-import { Button } from '../../styles/globalStyles'
+import { Button } from 'styles/globalStyles'
 import { Link } from 'gatsby'
 import tw from 'twin.macro'
 

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { Tilt } from '../common/Tilt'
+import { Tilt } from 'components/common/Tilt'
 
 const isPair = (amount) => {
   return amount % 2 === 0
