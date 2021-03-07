@@ -4,7 +4,10 @@ import { Button } from '../../styles/globalStyles'
 import { Link } from 'gatsby'
 import tw from 'twin.macro'
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
+  background-color: #6937ff;
+`
+export const FooterWrapper = styled.div`
   width: 100%;
   background-color: #221e41;
   padding: 4rem 24px 2rem 24px;
