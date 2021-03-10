@@ -2,11 +2,11 @@ import React from 'react'
 
 import Layout from 'components/Layout/layout'
 import SEO from 'components/seo'
-import Cover from 'components/homepage/Cover'
-import Services from 'components/homepage/ServicesSection'
-import PhraseSection from 'components/homepage/PhraseSection'
-import ProjectsSection from 'components/homepage/ProjectsSection'
-import ClientsSection from 'components/homepage/ClientsSection'
+import Cover from 'components/Homepage/Cover'
+import Services from 'components/Homepage/ServicesSection'
+import PhraseSection from 'components/Homepage/PhraseSection'
+import ProjectsSection from 'components/Homepage/ProjectsSection'
+import ClientsSection from 'components/Homepage/ClientsSection'
 
 const IndexPage = () => (
   <Layout>
