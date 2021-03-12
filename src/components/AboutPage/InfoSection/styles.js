@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { OnContainer, SectionWrapper, Title } from 'styles/globalStyles'
+import { OnContainer, Title } from 'styles/globalStyles'
 
 export const InfoContainer = styled(OnContainer)`
   width: 90%;
@@ -14,37 +14,6 @@ export const InfoContainer = styled(OnContainer)`
   @media (max-width: 640px) {
     max-width: 100%;
     border-bottom-left-radius: 50px;
-  }
-`
-export const InfoWrapper = styled(SectionWrapper)``
-export const InfoImgWrapper = styled.div`
-  display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
-  border-top-right-radius: 100px;
-  margin-bottom: 62px;
-  @media screen and (max-width: 768px) {
-    margin-top: 20px;
-    margin-bottom: 32px;
-  }
-  @media (max-width: 640px) {
-    border-top-right-radius: 50px;
-  }
-`
-export const InfoImg = styled.img`
-  padding-right: 0;
-  border: 0;
-  max-width: 90%;
-  max-height: 500px;
-  vertical-align: middle;
-  display: inline-block;
-  /*max-height: 555px;*/
-  border-top-right-radius: 100px;
-  @media screen and (max-width: 1024px) {
-    max-height: 800px;
-  }
-  @media (max-width: 640px) {
-    border-top-right-radius: 50px;
-    max-width: 100%;
   }
 `
 export const InfoIntro = styled.div`

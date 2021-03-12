@@ -2,12 +2,12 @@ import React from 'react'
 
 import {
   InfoContainer,
-  InfoImgWrapper,
-  InfoImg, InfoIntro, InfoDescription, InfoTitle
+  InfoIntro,
+  InfoDescription,
+  InfoTitle
 } from './styles'
 
-import { Colors, SectionWrapper, Title } from 'styles/globalStyles'
-import image from 'assets/img/workin-persons.jpg'
+import { Colors, SectionWrapper } from 'styles/globalStyles'
 
 export default function InfoSection () {
   return (
