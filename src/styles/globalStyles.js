@@ -41,7 +41,7 @@ export const OnContainer = styled.section`
 `
 export const SectionWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding-right: 120px;
   padding-left: 120px;
