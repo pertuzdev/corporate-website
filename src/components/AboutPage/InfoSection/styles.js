@@ -13,7 +13,10 @@ export const InfoContainer = styled(OnContainer)`
   }
   @media (max-width: 640px) {
     max-width: 100%;
+    width: 100%;
+    margin: 70px auto;
     border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 `
 export const InfoIntro = styled.div`
@@ -26,6 +29,9 @@ export const InfoIntro = styled.div`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     align-self: unset;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 0;
   }
 `
 export const InfoTitle = styled(Title)`
