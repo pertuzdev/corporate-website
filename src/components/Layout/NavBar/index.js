@@ -57,7 +57,7 @@ function NavBar () {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/nosotros' onClick={closeMobileMenu}>
+                <NavLinks to='/about' onClick={closeMobileMenu}>
                   Nosotros
                 </NavLinks>
               </NavItem>

@@ -2,17 +2,18 @@ import React from 'react'
 
 import {
   InfoContainer,
+  InfoSectionWrapper,
   InfoIntro,
   InfoDescription,
   InfoTitle
 } from './styles'
 
-import { Colors, SectionWrapper } from 'styles/globalStyles'
+import { Colors } from 'styles/globalStyles'
 
 export default function InfoSection () {
   return (
     <InfoContainer color={Colors['primary-purple']}>
-      <SectionWrapper>
+      <InfoSectionWrapper>
         <InfoIntro>
           <InfoTitle color='white' marginBottom>Misión</InfoTitle>
           <InfoDescription>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti dolor impedit,
@@ -27,7 +28,7 @@ export default function InfoSection () {
             Beatae consequatur corporis soluta.
           </InfoDescription>
         </InfoIntro>
-      </SectionWrapper>
+      </InfoSectionWrapper>
     </InfoContainer>
   )
 }

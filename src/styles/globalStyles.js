@@ -41,14 +41,13 @@ export const OnContainer = styled.section`
 `
 export const SectionWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding-right: 120px;
   padding-left: 120px;
   @media screen and (max-width: 1024px) {
     padding-right: 80px;
     padding-left: 80px;
-    flex-direction: column;
   }
   @media screen and (max-width: 640px) {
     padding-right: 30px;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { OnContainer, Title } from 'styles/globalStyles'
+import { OnContainer, SectionWrapper, Title } from 'styles/globalStyles'
 
 export const InfoContainer = styled(OnContainer)`
   width: 90%;
@@ -17,6 +17,12 @@ export const InfoContainer = styled(OnContainer)`
     margin: 70px auto;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
+  }
+`
+export const InfoSectionWrapper = styled(SectionWrapper)`
+  flex-direction: row;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
   }
 `
 export const InfoIntro = styled.div`
