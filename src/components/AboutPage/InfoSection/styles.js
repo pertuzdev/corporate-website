@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { OnContainer, SectionWrapper, Title } from 'styles/globalStyles'
+import styled from "styled-components";
+import { SectionContainer, SectionWrapper, Title } from "styles/globalStyles";
 
-export const InfoContainer = styled(OnContainer)`
+export const InfoContainer = styled(SectionContainer)`
   width: 90%;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -18,13 +18,13 @@ export const InfoContainer = styled(OnContainer)`
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
   }
-`
+`;
 export const InfoSectionWrapper = styled(SectionWrapper)`
   flex-direction: row;
   @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
-`
+`;
 export const InfoIntro = styled.div`
   display: flex;
   flex-direction: column;
@@ -39,11 +39,11 @@ export const InfoIntro = styled.div`
   @media screen and (max-width: 640px) {
     padding: 0;
   }
-`
+`;
 export const InfoTitle = styled(Title)`
   line-height: 1.1;
   font-weight: bold;
-  /*margin-bottom: ${({ marginBottom }) => marginBottom ? '64px' : 'unset'};*/
+  /*margin-bottom: ${({ marginBottom }) => (marginBottom ? "64px" : "unset")};*/
   @media screen and (max-width: 1024px) {
     font-size: 38px;
     margin-bottom: 34px;
@@ -52,7 +52,7 @@ export const InfoTitle = styled(Title)`
     font-size: 32px;
     margin-bottom: 20px;
   }
-`
+`;
 export const InfoDescription = styled.p`
   text-align: center;
   color: white;
@@ -67,4 +67,4 @@ export const InfoDescription = styled.p`
     font-size: 1rem;
     font-weight: 500;
   }
-`
+`;

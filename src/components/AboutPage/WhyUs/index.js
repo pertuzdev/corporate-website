@@ -1,38 +1,53 @@
-import React from 'react'
-import { OnContainer, SectionWrapper, Title, Colors } from 'styles/globalStyles'
-import { WhyUsImg, WhyUsImgWrapper, WhyUsList, WhyUsItem, WhyUsItemTitle, WhyUsDescription, WhyUsRow } from './styles'
-import img from 'assets/img/why-us-image.png'
-import { IconContext } from 'react-icons'
-import { FaRegStar, FaRegLightbulb, FaPalette } from 'react-icons/fa'
+import React from "react";
+import {
+  SectionContainer,
+  SectionWrapper,
+  Title,
+  Colors,
+} from "styles/globalStyles";
+import {
+  WhyUsImg,
+  WhyUsImgWrapper,
+  WhyUsList,
+  WhyUsItem,
+  WhyUsItemTitle,
+  WhyUsDescription,
+  WhyUsRow,
+} from "./styles";
+import img from "assets/img/why-us-image.png";
+import { IconContext } from "react-icons";
+import { FaRegStar, FaRegLightbulb, FaPalette } from "react-icons/fa";
 
-export default function WhyUs () {
+export default function WhyUs() {
   return (
-    <OnContainer>
+    <SectionContainer>
       <SectionWrapper>
         <Title>Valores</Title>
         <WhyUsList>
-          <IconContext.Provider value={{ color: Colors['primary-purple'] }}>
+          <IconContext.Provider value={{ color: Colors["primary-purple"] }}>
             <WhyUsRow>
               <WhyUsItem>
-                <FaRegStar/>
+                <FaRegStar />
                 <WhyUsItemTitle>Excelencia</WhyUsItemTitle>
                 <WhyUsDescription>
-                  Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel.
+                  Nuestro equipo no solo desarrolla. Resuelve con soluciones de
+                  alto nivel.
                 </WhyUsDescription>
               </WhyUsItem>
               <WhyUsImgWrapper>
-                <WhyUsImg src={img} alt='CoverImage'/>
+                <WhyUsImg src={img} alt="CoverImage" />
               </WhyUsImgWrapper>
               <WhyUsItem>
-                <FaRegLightbulb/>
+                <FaRegLightbulb />
                 <WhyUsItemTitle>Innovación</WhyUsItemTitle>
                 <WhyUsDescription>
-                  Queremos ir un paso más allá, creando productos que hagan una diferencia, que innoven.
+                  Queremos ir un paso más allá, creando productos que hagan una
+                  diferencia, que innoven.
                 </WhyUsDescription>
               </WhyUsItem>
             </WhyUsRow>
             <WhyUsItem>
-              <FaPalette/>
+              <FaPalette />
               <WhyUsItemTitle>Creatividad</WhyUsItemTitle>
               <WhyUsDescription>
                 Somos un equipo creativo que busca que tu idea sea única.
@@ -41,6 +56,6 @@ export default function WhyUs () {
           </IconContext.Provider>
         </WhyUsList>
       </SectionWrapper>
-    </OnContainer>
-  )
+    </SectionContainer>
+  );
 }

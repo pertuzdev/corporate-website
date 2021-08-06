@@ -1,23 +1,35 @@
-import React from 'react'
+import React from "react";
 
-import { OnContainer, SectionWrapper, Title, Colors } from 'styles/globalStyles'
+import {
+  SectionContainer,
+  SectionWrapper,
+  Title,
+  Colors,
+} from "styles/globalStyles";
 
-import { ProjectsWrapper } from './styles'
+import { ProjectsWrapper } from "./styles";
 
-import { projects } from './ProjectItemData'
-import ProjectItem from './ProjectItem'
+import { projects } from "./ProjectItemData";
+import ProjectItem from "./ProjectItem";
 
-export default function ProjectsSection () {
+export default function ProjectsSection() {
   return (
-    <OnContainer>
+    <SectionContainer>
       <SectionWrapper>
-        <Title color={Colors['secondary-blue']} marginBottom>Nuestro Trabajo</Title>
+        <Title color={Colors["secondary-blue"]} marginBottom>
+          Nuestro Trabajo
+        </Title>
         <ProjectsWrapper>
-          {
-            projects.map((project, index) => <ProjectItem key={project.title} index={index} amount={projects.length} {...project} />)
-          }
+          {projects.map((project, index) => (
+            <ProjectItem
+              key={project.title}
+              index={index}
+              amount={projects.length}
+              {...project}
+            />
+          ))}
         </ProjectsWrapper>
       </SectionWrapper>
-    </OnContainer>
-  )
+    </SectionContainer>
+  );
 }

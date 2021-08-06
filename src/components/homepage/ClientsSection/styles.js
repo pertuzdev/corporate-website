@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { OnContainer, Title } from 'styles/globalStyles'
+import styled from "styled-components";
+import { SectionContainer, Title } from "styles/globalStyles";
 
-export const ClientsContainer = styled(OnContainer)`
+export const ClientsContainer = styled(SectionContainer)`
   width: 100%;
   border-top-left-radius: 100px;
   margin-left: auto;
@@ -12,7 +12,7 @@ export const ClientsContainer = styled(OnContainer)`
     max-width: 100%;
     border-top-left-radius: 50px;
   }
-`
+`;
 export const ClientsContainer2 = styled.div`
   width: 100%;
   background-color: #6937ff;
@@ -45,7 +45,7 @@ export const ClientsContainer2 = styled.div`
     max-width: 100%;
     border-top-left-radius: 50px;
   }
-`
+`;
 export const ClientsIntro = styled.div`
   display: flex;
   flex-direction: row;
@@ -56,12 +56,12 @@ export const ClientsIntro = styled.div`
     flex-direction: column;
     align-self: unset;
   }
-`
+`;
 export const ClientsTitle = styled(Title)`
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
   }
-`
+`;
 export const ClientsDescription = styled.p`
   text-align: center;
   color: white;
@@ -77,7 +77,7 @@ export const ClientsDescription = styled.p`
     font-size: 1rem;
     font-weight: 500;
   }
-`
+`;
 export const ClientsList = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -85,17 +85,17 @@ export const ClientsList = styled.div`
   @media screen and (max-width: 768px) {
     margin-top: 60px;
   }
-`
+`;
 export const ClientItemContainer = styled.div`
   display: flex;
   width: 50%;
-  /*justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};*/
+  /*justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};*/
   border-right: 1px solid #784bff;
   border-bottom: 1px solid #784bff;
   :nth-of-type(even) {
     border-right: none;
   }
-`
+`;
 export const ClientImg = styled.img`
   padding-right: 0;
   border: 0;
@@ -105,7 +105,7 @@ export const ClientImg = styled.img`
   @media screen and (max-width: 768px) {
     max-width: 85%;
   }
-`
+`;
 export const ClientLink = styled.a`
   display: flex;
   justify-content: center;
@@ -115,4 +115,4 @@ export const ClientLink = styled.a`
   @media (max-width: 575.98px) {
     height: 90px;
   }
-`
+`;

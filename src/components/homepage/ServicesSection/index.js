@@ -1,33 +1,36 @@
-import React from 'react'
+import React from "react";
 
-import { services } from './ServiceData'
+import { services } from "./ServiceData";
 
-import ServicesItem from './ServicesItem'
+import ServicesItem from "./ServicesItem";
 
-import { ServicesList } from './styles'
-import { OnContainer, SectionWrapper, Colors, Title } from 'styles/globalStyles'
+import { ServicesList } from "./styles";
+import {
+  SectionContainer,
+  SectionWrapper,
+  Colors,
+  Title,
+} from "styles/globalStyles";
 
-export default function ServicesSection () {
+export default function ServicesSection() {
   return (
-    <OnContainer>
+    <SectionContainer>
       <SectionWrapper>
-        <Title color={Colors['secondary-blue']} marginBottom>
+        <Title color={Colors["secondary-blue"]} marginBottom>
           SERVICIOS
         </Title>
         <ServicesList>
-          {
-            services.map(({ image, altText, title, description }) =>
-              <ServicesItem
-                key={title}
-                img={image}
-                altText={altText}
-                title={title}
-                description={description}
-              />
-            )
-          }
+          {services.map(({ image, altText, title, description }) => (
+            <ServicesItem
+              key={title}
+              img={image}
+              altText={altText}
+              title={title}
+              description={description}
+            />
+          ))}
         </ServicesList>
       </SectionWrapper>
-    </OnContainer>
-  )
+    </SectionContainer>
+  );
 }

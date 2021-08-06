@@ -4,14 +4,14 @@ import ServiceItem from "components/ServicesPage/ServiceItem";
 
 import { ServicesList, ServicesSectionWrapper, ServiceName } from "./styles";
 import { data } from "./ServicesData";
-import { OnContainer } from "../../../styles/globalStyles";
+import { SectionContainer } from "../../../styles/globalStyles";
 
 export default function ListOfServices({ getActualService }) {
   const handleServiceClick = ({ name, description, icon, worktype, tools }) => {
     getActualService({ name, description, icon, worktype, tools });
   };
   return (
-    <OnContainer>
+    <SectionContainer>
       <ServicesSectionWrapper>
         <ServicesList>
           {data.map(({ name, description, icon, worktype, tools }) => (
@@ -27,6 +27,6 @@ export default function ListOfServices({ getActualService }) {
           ))}
         </ServicesList>
       </ServicesSectionWrapper>
-    </OnContainer>
+    </SectionContainer>
   );
 }
