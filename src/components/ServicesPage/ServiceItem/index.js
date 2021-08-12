@@ -6,13 +6,19 @@ export default function ServiceItem({
   name,
   description,
   icon,
-  worktype,
   tools,
+  stepsToFollow,
 }) {
   return (
     <ServiceItemWrapper
       onClick={(e) =>
-        onServiceClick({ name, description, icon, worktype, tools })
+        onServiceClick({
+          name,
+          description,
+          icon,
+          tools,
+          stepsToFollow,
+        })
       }
     >
       <ServiceItemName>{name}</ServiceItemName>

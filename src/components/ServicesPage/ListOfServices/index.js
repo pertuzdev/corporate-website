@@ -2,31 +2,43 @@ import React, { useEffect, useState } from "react";
 
 import ServiceItem from "components/ServicesPage/ServiceItem";
 
-import { ServicesList, ServicesSectionWrapper, ServiceName } from "./styles";
-import { data } from "./ServicesData";
+import {
+  ServicesList,
+  ServicesSectionWrapper,
+  ServiceName,
+  ServicesSectionContainer,
+} from "./styles";
 import { SectionContainer } from "../../../styles/globalStyles";
 
-export default function ListOfServices({ getActualService }) {
+export default function ListOfServices({ services, getActualService }) {
   const handleServiceClick = ({ name, description, icon, worktype, tools }) => {
     getActualService({ name, description, icon, worktype, tools });
   };
   return (
-    <SectionContainer>
+    <ServicesSectionContainer>
       <ServicesSectionWrapper>
         <ServicesList>
-          {data.map(({ name, description, icon, worktype, tools }) => (
-            <ServiceItem
-              key={name}
-              name={name}
-              icon={icon}
-              description={description}
-              worktype={worktype}
-              tools={tools}
-              onServiceClick={getActualService}
-            />
-          ))}
+          {services.map(
+            ({
+              name = "",
+              description = "",
+              icon = "",
+              tools = [],
+              stepsToFollow = [],
+            }) => (
+              <ServiceItem
+                key={name}
+                name={name}
+                icon={icon}
+                description={description}
+                tools={tools}
+                onServiceClick={getActualService}
+                stepsToFollow={stepsToFollow}
+              />
+            )
+          )}
         </ServicesList>
       </ServicesSectionWrapper>
-    </SectionContainer>
+    </ServicesSectionContainer>
   );
 }
