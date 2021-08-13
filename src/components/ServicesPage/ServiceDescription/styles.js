@@ -47,12 +47,16 @@ export const ServiceTitle = styled.p`
 `;
 export const ServiceDescriptionTxt = styled.p`
   --tw-text-opacity: 1;
+  text-align: center;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
   margin-top: 1rem;
   font-size: 20px;
   font-weight: 500;
   opacity: 0.9;
   max-width: 820px;
+  @media and (max-width: 640px) {
+    text-align: center;
+  }
 `;
 
 export const ServiceWorkType = styled.div``;
