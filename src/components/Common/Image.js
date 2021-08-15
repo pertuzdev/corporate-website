@@ -9,7 +9,7 @@ export default function Image({
   alt = "catech image",
 }) {
   return (
-    <ImgContainer w={width} h={height}>
+    <ImgContainer width={width} height={height}>
       <Img src={src} alt={alt} />
     </ImgContainer>
   );

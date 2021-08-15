@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Img } from "components/Common/Image.style";
 import { SectionContainer, SectionWrapper } from "styles/globalStyles";
 import { Title } from "components/common/texts.style";
 import { colors } from "styles/colors";
@@ -31,8 +33,8 @@ export default function WhyUs() {
                   alto nivel.
                 </WhyUsDescription>
               </WhyUsItem>
-              <WhyUsImgWrapper>
-                <WhyUsImg src={img} alt="CoverImage" />
+              <WhyUsImgWrapper width="309px" height="309px">
+                <Img src={img} alt="CoverImage" />
               </WhyUsImgWrapper>
               <WhyUsItem>
                 <FaRegLightbulb />

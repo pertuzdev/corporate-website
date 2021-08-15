@@ -17,15 +17,19 @@ import {
 } from "./styles";
 import img from "../../../assets/img/about-profile-img.png";
 import { FaHandHoldingHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Image from "components/Common/Image";
 
 export default function ProfileSection() {
   return (
     <ProfileContainer>
       <ProfileWrapper>
         <ProfileRow justifyContent="center" maxWidth550 center alignStart>
-          <ProfileImgWrapper>
-            <ProfileImg src={img} alt="CoverImage" />
-          </ProfileImgWrapper>
+          <Image
+            width="455px"
+            height="455px"
+            src={img}
+            alt="Illustration of person with VR glasses"
+          />
         </ProfileRow>
         <ProfileRow
           maxWidth550
