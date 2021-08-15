@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { SectionContainer, Title } from "styles/globalStyles";
+
+import { Text } from "components/Common/texts.style";
+import { SectionContainer } from "styles/globalStyles";
+import { Title } from "components/common/texts.style";
 
 export const ClientsContainer = styled(SectionContainer)`
   width: 100%;
@@ -62,57 +65,50 @@ export const ClientsTitle = styled(Title)`
     margin-bottom: 0;
   }
 `;
-export const ClientsDescription = styled.p`
-  text-align: center;
-  color: white;
+export const ClientsDescription = styled(Text)`
   line-height: 1.89;
-  font-size: 1.3rem;
-  font-weight: 400;
-  max-width: 730px;
   margin-left: 55px;
+  margin-top: 0;
+  margin-bottom: 0;
   @media screen and (max-width: 1024px) {
     margin-left: 0;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    font-weight: 500;
   }
 `;
 export const ClientsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
+  width: 100%;
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
     margin-top: 60px;
   }
 `;
 export const ClientItemContainer = styled.div`
   display: flex;
-  width: 50%;
   /*justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};*/
-  border-right: 1px solid #784bff;
-  border-bottom: 1px solid #784bff;
-  :nth-of-type(even) {
-    border-right: none;
+  flex: 1;
+  max-width: 30%;
+  flex-basis: 30%;
+  justify-content: center;
+  @media screen and (max-width: 640px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 25px 50px;
+    border: none;
+    justify-content: center;
   }
 `;
 export const ClientImg = styled.img`
-  padding-right: 0;
-  border: 0;
-  vertical-align: middle;
-  display: inline-block;
-  max-width: 55%;
-  @media screen and (max-width: 768px) {
-    max-width: 85%;
-  }
+  width: 100%;
 `;
 export const ClientLink = styled.a`
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 220px;
-  padding: 20px;
-  @media (max-width: 575.98px) {
+  max-width: 220px;
+  max-height: 206.75px;
+  // padding: 20px;
+  /*@media (max-width: 575.98px) {
     height: 90px;
-  }
+  }*/
 `;

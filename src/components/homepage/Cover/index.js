@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import {
   CoverContainer,
@@ -9,54 +9,56 @@ import {
   TextWrapper,
   CoverTitle,
   Highlight,
-  CoverSubTitle,
+  CoverIntro,
   CoverButton,
   CoverImgWrapper,
-  CoverImg
-} from './styles'
+  CoverImg,
+} from "./styles";
 
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin
-} from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import img from 'assets/img/cover-image.png'
+import img from "assets/img/cover-image.png";
+import Image from "components/Common/Image";
 
-export default function Cover () {
+export default function Cover() {
   return (
     <CoverContainer>
       <CoverWrapper>
         <CoverRow maxWidth550 maxWidth450 center coverHeading flexStart>
           <TextWrapper>
             <CoverTitle>
-              DE LA <Highlight>IDEA</Highlight> A LA REALIDAD<Highlight>.</Highlight>
+              DE LA <Highlight>IDEA</Highlight> A LA REALIDAD
+              <Highlight>.</Highlight>
             </CoverTitle>
-            <CoverSubTitle>
-              Creamos asombrosas estrategias de marketing digital y excelentes productos de software.
-            </CoverSubTitle>
+            <CoverIntro left>
+              Creamos asombrosas estrategias de marketing digital y excelentes
+              productos de software.
+            </CoverIntro>
           </TextWrapper>
           <CoverButton primary big>
             Contáctanos
           </CoverButton>
         </CoverRow>
         <CoverRow maxWidth550 center flexEnd>
-          <CoverImgWrapper>
-            <CoverImg src={img} alt='CoverImage' />
-          </CoverImgWrapper>
+          <Image
+            width="555px"
+            height="555px"
+            src={img}
+            alt="person animated with computer"
+          />
         </CoverRow>
       </CoverWrapper>
       <CoverSocialMedia>
-        <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-          <FaFacebook/>
+        <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+          <FaFacebook />
         </SocialIconLink>
-        <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-          <FaInstagram/>
+        <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+          <FaInstagram />
         </SocialIconLink>
-        <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
-          <FaLinkedin/>
+        <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+          <FaLinkedin />
         </SocialIconLink>
       </CoverSocialMedia>
     </CoverContainer>
-  )
+  );
 }

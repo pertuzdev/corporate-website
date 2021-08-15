@@ -1,4 +1,9 @@
 import React from "react";
+
+import { colors } from "styles/colors";
+
+import { Text } from "components/common/texts.style";
+
 import {
   SectionContainer as SC,
   SectionWrapper,
@@ -6,7 +11,6 @@ import {
 import {
   Img,
   ServiceTitle,
-  ServiceDescriptionTxt,
   ServiceWorkType,
   SectionDescriptionWrapper,
   ServiceTools,
@@ -18,10 +22,8 @@ import {
   Icon,
   StepsTitle,
   StepsList,
-  StepsIntro,
   Tools,
   ToolsTitle,
-  ToolsIntro,
   ToolsList,
   ToolItemContainer,
   ToolIcon,
@@ -42,13 +44,13 @@ export default function ServiceDescription({
       <SectionDescriptionWrapper>
         <Img src={icon} alt={"imagen del servicio"} />
         <ServiceTitle>{name}</ServiceTitle>
-        <ServiceDescriptionTxt>{description}</ServiceDescriptionTxt>
+        <Text>{description}</Text>
         <Steps>
           <StepsTitle>¿Cómo procedemos?</StepsTitle>
-          <StepsIntro>
+          <Text>
             We take care of every project with our standardized method,
             providing clear process from the beginning until final delivery.
-          </StepsIntro>
+          </Text>
           <StepsList>
             {stepsToFollow.map(({ icon, altText, title, desc }) => (
               <StepItemContainer>
@@ -61,9 +63,9 @@ export default function ServiceDescription({
         </Steps>
         <Tools>
           <ToolsTitle>Herramientas</ToolsTitle>
-          <ToolsIntro>
+          <Text>
             Ocupamos las mejores herramientas en el desarrollo de software
-          </ToolsIntro>
+          </Text>
           <ToolsList>
             {tools.map((tool) => (
               <ToolItemContainer>

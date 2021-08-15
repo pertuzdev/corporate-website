@@ -1,14 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-export const Colors = {
-  "primary-purple": "#6937ff",
-  "secondary-blue": "#1900FF",
-  "gray-background": "#E5E5E5",
-  "light-white": "#F7F7F7",
-  "lighter-white": "#fafaff",
-  "light-blue": "#2ebbff",
-};
-console.log(Colors["primary-purple"]);
 const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
@@ -52,39 +43,5 @@ export const SectionWrapper = styled.div`
   @media screen and (max-width: 640px) {
     padding-right: 30px;
     padding-left: 30px;
-  }
-`;
-export const Title = styled.h2`
-  font-family: "Inter", serif;
-  line-height: 1.1;
-  font-size: 48px;
-  text-align: center;
-  font-weight: bold;
-  color: ${({ color }) => color || "unset"};
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? "64px" : "unset")};
-  @media screen and (max-width: 640px) {
-    font-size: 32px;
-    margin-bottom: ${({ marginBottom }) => (marginBottom ? "40px" : "unset")};
-  }
-`;
-
-export const Button = styled.button`
-  border-radius: 6px;
-  background: ${({ primary }) => (primary ? Colors["primary-purple"] : "#fff")};
-  white-space: nowrap;
-  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: ${({ primary }) => (primary ? "#fff" : Colors["primary-purple"])};
-  font-weight: 500;
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  outline: none;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    background-color: ${({ primary }) => (primary ? "#3C235D" : "#4B59F7")};
-  }
-  @media screen and (max-width: 768px) {
-    width: 100%;
   }
 `;

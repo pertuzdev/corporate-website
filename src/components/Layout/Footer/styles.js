@@ -1,12 +1,12 @@
-import styled from 'styled-components'
-import { FaMagento } from 'react-icons/fa'
-import { Button } from 'styles/globalStyles'
-import { Link } from 'gatsby'
-import tw from 'twin.macro'
+import styled from "styled-components";
+import { FaMagento } from "react-icons/fa";
+import { Button } from "components/common/buttons.style";
+import { Link } from "gatsby";
+import tw from "twin.macro";
 
 export const FooterContainer = styled.footer`
   background-color: #6937ff;
-`
+`;
 export const FooterWrapper = styled.div`
   width: 100%;
   background-color: #221e41;
@@ -38,7 +38,7 @@ export const FooterWrapper = styled.div`
     max-width: 100%;
     border-top-right-radius: 50px;
   }
-`
+`;
 
 export const FooterSubscription = styled.section`
   display: flex;
@@ -50,14 +50,14 @@ export const FooterSubscription = styled.section`
   padding: 24px 0;
   color: #fff;
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-  
+
   @media screen and (min-width: 1024px) {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 15%;
   }
-`
+`;
 
 export const FooterContactAndNav = styled.div`
   display: flex;
@@ -67,37 +67,37 @@ export const FooterContactAndNav = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-`
+`;
 
 export const ContactInfoContainer = styled.div`
   ${tw`self-start flex-grow pt-2.5 px-2.5`}
-`
+`;
 
 export const ContactInfoWrapper = styled.div`
   ${tw`pt-8 pb-10`}
-`
+`;
 
 export const ContactInfoItem = styled.div`
   ${tw`flex text-white mb-5`}
-`
+`;
 
 export const FooterEmailContact = styled.div`
   ${tw`text-base`}
-`
+`;
 
 export const FooterSubHeading = styled.p`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-  'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-bottom: 40px;
   line-height: 40px;
   font-weight: bold;
   animation-name: fadeInUp;
   font-size: 40px;
-  
+
   @media screen and (min-width: 1024px) {
     max-width: 410px;
   }
-  
+
   @media screen and (max-width: 1024px) {
     font-size: 36px;
     line-height: 52px;
@@ -112,16 +112,15 @@ export const FooterSubHeading = styled.p`
   @media screen and (max-width: 479px) {
     font-size: 30px;
   }
-
-`
+`;
 
 export const FooterButton = styled(Button)`
   padding: 12px 64px;
-`
+`;
 
 export const FooterSubText = styled.p`
   ${tw`text-base text-white ml-5`}
-`
+`;
 
 export const Form = styled.form`
   display: flex;
@@ -131,7 +130,7 @@ export const Form = styled.form`
     flex-direction: column;
     width: 80%;
   }
-`
+`;
 
 export const FormInput = styled.input`
   padding: 10px 20px;
@@ -150,7 +149,7 @@ export const FormInput = styled.input`
     width: 100%;
     margin: 0 0 16px 0;
   }
-`
+`;
 
 export const FooterLinksContainer = styled.div`
   /*width: 100%;
@@ -164,7 +163,7 @@ export const FooterLinksContainer = styled.div`
   @media screen and (max-width: 768px) {
     justify-content: space-between;
   }
-`
+`;
 export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
@@ -175,17 +174,17 @@ export const NavLogo = styled(Link)`
   text-decoration: none;
   font-size: 1.5rem;
   font-family: Quicksand, serif;
-`
+`;
 
 export const NavIcon = styled.img`
   margin-right: 0.5rem;
   width: 26px;
   height: 34.67px;
-`
+`;
 
 export const BoldSpan = styled.span`
   font-weight: 700;
-`
+`;
 
 export const FooterLinksWrapper = styled.div`
   display: flex;
@@ -194,7 +193,7 @@ export const FooterLinksWrapper = styled.div`
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
-`
+`;
 
 export const FooterLinkItems = styled.div`
   display: flex;
@@ -210,11 +209,11 @@ export const FooterLinkItems = styled.div`
     padding: 10px;
     width: 100%;
   }
-`
+`;
 
 export const FooterLinkTitle = styled.h2`
   ${tw`mb-4 font-bold`}
-`
+`;
 
 export const FooterLink = styled(Link)`
   color: #fff;
@@ -225,12 +224,12 @@ export const FooterLink = styled(Link)`
     color: #0467fb;
     transition: 0.3s ease-out;
   }
-`
+`;
 
 export const SocialMedia = styled.section`
   /*max-width: 1000px;*/
   width: 100%;
-`
+`;
 
 export const SocialMediaWrap = styled.div`
   display: flex;
@@ -243,7 +242,7 @@ export const SocialMediaWrap = styled.div`
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
-`
+`;
 
 export const SocialLogo = styled(Link)`
   color: #fff;
@@ -254,11 +253,11 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-`
+`;
 
 export const SocialIcon = styled(FaMagento)`
   margin-right: 10px;
-`
+`;
 
 export const WebsiteRights = styled.p`
   margin-top: 25px;
@@ -266,16 +265,16 @@ export const WebsiteRights = styled.p`
   margin-bottom: 16px;
   font-size: 11px;
   line-height: 14px;
-`
+`;
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 240px;
-`
+`;
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
-`
+`;

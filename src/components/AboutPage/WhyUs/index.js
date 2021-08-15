@@ -1,10 +1,7 @@
 import React from "react";
-import {
-  SectionContainer,
-  SectionWrapper,
-  Title,
-  Colors,
-} from "styles/globalStyles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
+import { Title } from "components/common/texts.style";
+import { colors } from "styles/colors";
 import {
   WhyUsImg,
   WhyUsImgWrapper,
@@ -24,7 +21,7 @@ export default function WhyUs() {
       <SectionWrapper>
         <Title>Valores</Title>
         <WhyUsList>
-          <IconContext.Provider value={{ color: Colors["primary-purple"] }}>
+          <IconContext.Provider value={{ color: colors["primary-purple"] }}>
             <WhyUsRow>
               <WhyUsItem>
                 <FaRegStar />

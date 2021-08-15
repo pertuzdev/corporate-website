@@ -1,12 +1,16 @@
-import React from 'react'
-import { ClientItemContainer, ClientLink, ClientImg } from './styles'
+import React from "react";
+import Image from "components/Common/Image";
+import { ClientItemContainer, ClientLink, ClientImg } from "./styles";
 
-export default function ClientItem ({ logo }) {
+export default function ClientItem({ logo }) {
   return (
     <ClientItemContainer>
-      <ClientLink>
-        <ClientImg src={logo} />
-      </ClientLink>
+      <Image
+        width="220px"
+        height="206.75px"
+        src={logo}
+        alt="Logo of CATECH client"
+      />
     </ClientItemContainer>
-  )
+  );
 }

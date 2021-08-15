@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { SectionContainer, SectionWrapper, Title } from "styles/globalStyles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
+import { Title, Text } from "components/common/texts.style";
 
 export const InfoContainer = styled(SectionContainer)`
   width: 90%;
@@ -53,18 +54,9 @@ export const InfoTitle = styled(Title)`
     margin-bottom: 20px;
   }
 `;
-export const InfoDescription = styled.p`
-  text-align: center;
-  color: white;
+export const InfoDescription = styled(Text)`
   line-height: 1.89;
-  font-size: 1.3rem;
-  font-weight: 400;
-  max-width: 730px;
   @media screen and (max-width: 1024px) {
     margin-left: 0;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    font-weight: 500;
   }
 `;

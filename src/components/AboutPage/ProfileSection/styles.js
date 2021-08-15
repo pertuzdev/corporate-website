@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import { Button, Container, Colors } from "styles/globalStyles";
+import { Title } from "components/common/texts.style";
+import { Container } from "styles/globalStyles";
+import { Button } from "components/common/buttons.style";
+import { colors } from "styles/colors";
 
 export const ProfileContainer = styled.div`
   ${tw`pt-10 pb-20 px-0`};
-  background-color: ${Colors["lighter-white"]};
+  background-color: ${colors["lighter-white"]};
 `;
 export const ProfileWrapper = styled(Container)`
   display: flex;
@@ -53,22 +56,18 @@ export const ProfileSocialIconLinks = styled.li`
   ${tw`text-gray-500 text-2xl mr-4`}
 `;
 export const ProfileTextWrapper = styled.div``;
-export const ProfileTitle = styled.h1`
-  ${tw`font-bold font-inter`};
+
+export const ProfileTitle = styled(Title)`
   font-size: 3.5rem;
   line-height: 1.1;
   letter-spacing: -3.5px;
-  margin-bottom: 50px;
   @media screen and (max-width: 994px) {
-    font-size: 3rem;
     letter-spacing: 0;
-  }
-  @media screen and (max-width: 640px) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 `;
 export const ProfileHighlight = styled.span`
-  color: ${Colors["primary-purple"]};
+  color: ${colors["primary-purple"]};
 `;
 export const ProfileSubTitle = styled.p`
   ${tw`text-gray-900 mt-4`};
@@ -119,14 +118,14 @@ export const PrincipleItem = styled.li`
   box-shadow: 1px 1px 13px rgb(214 215 216 / 57%);
   transition: all 0.2s ease-in;
   :hover {
-    background-color: ${Colors["primary-purple"]};
+    background-color: ${colors["primary-purple"]};
     color: white;
   }
   @media screen and (max-width: 640px) {
     flex-basis: 70%;
     width: 70%;
     margin-bottom: 10px;
-    background-color: ${Colors["primary-purple"]};
+    background-color: ${colors["primary-purple"]};
     color: white;
     margin-right: 0;
   }

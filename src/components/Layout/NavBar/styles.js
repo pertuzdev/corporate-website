@@ -1,6 +1,7 @@
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { Colors, Container } from 'styles/globalStyles'
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { colors } from "styles/colors";
+import { Container } from "styles/globalStyles";
 
 export const Nav = styled.nav`
   background: white;
@@ -13,14 +14,14 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-`
+`;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   /*height: 80px;*/
   ${Container}
-`
+`;
 
 export const NavLogo = styled(Link)`
   color: black;
@@ -28,21 +29,21 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: Quicksand,serif;
+  font-family: Quicksand, serif;
   display: flex;
   align-items: center;
-`
+`;
 
 export const BoldSpan = styled.span`
   font-weight: 700;
-  color: ${Colors['primary-purple']};
-`
+  color: ${colors["primary-purple"]};
+`;
 
 export const NavIcon = styled.img`
   margin-right: 0.5rem;
   width: 26px;
   height: 34.67px;
-`
+`;
 
 export const MobileIcon = styled.div`
   display: none;
@@ -56,7 +57,7 @@ export const MobileIcon = styled.div`
     font-size: 2rem;
     cursor: pointer;
   }
-`
+`;
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -70,12 +71,12 @@ export const NavMenu = styled.ul`
     height: 90vh;
     position: absolute;
     top: 67px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #59358B;
+    background: #59358b;
   }
-`
+`;
 
 export const NavItem = styled.li`
   height: 60px;
@@ -90,7 +91,7 @@ export const NavItem = styled.li`
       border: none;
     }
   }
-`
+`;
 
 export const NavItemBtn = styled.li`
   @media screen and (max-width: 960px) {
@@ -100,10 +101,10 @@ export const NavItemBtn = styled.li`
     width: 100%;
     height: 120px;
   }
-`
+`;
 
 export const NavLinks = styled(Link)`
-  color: ${Colors['primary-purple']};
+  color: ${colors["primary-purple"]};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -120,7 +121,7 @@ export const NavLinks = styled(Link)`
       transition: all 0.3s ease;
     }
   }
-`
+`;
 
 export const NavBtnLink = styled(Link)`
   display: flex;
@@ -132,4 +133,4 @@ export const NavBtnLink = styled(Link)`
   width: 100%;
   border: none;
   outline: none;
-`
+`;

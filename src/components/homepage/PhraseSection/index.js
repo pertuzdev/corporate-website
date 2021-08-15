@@ -1,29 +1,30 @@
 import React from "react";
 
 import rocket from "assets/img/rocket.png";
-import { PhraseSectionRow, Img, PhraseSectionDescription } from "./styles";
-import {
-  SectionContainer,
-  SectionWrapper,
-  Title,
-  Colors,
-} from "styles/globalStyles";
+
+import { PhraseSectionRow, PhraseSectionIntro, PSImgContainer } from "./styles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
+import { Title } from "components/common/texts.style";
+import { colors } from "styles/colors";
+import { Img } from "components/Common/Image.style";
 
 export default function PhraseSection() {
   return (
-    <SectionContainer color={Colors["light-white"]}>
+    <SectionContainer color={colors["white-light"]}>
       <SectionWrapper>
         <PhraseSectionRow marginBottom>
-          <Title color={Colors["secondary-blue"]}>IMPULSAMOS TU MARCA</Title>
+          <Title color={colors["secondary-blue"]}>IMPULSAMOS TU MARCA</Title>
         </PhraseSectionRow>
         <PhraseSectionRow marginBottom>
-          <PhraseSectionDescription>
+          <PhraseSectionIntro>
             Creamos contenido digital que impacte a tus clientes para que no
             dejen de hablar de tu marca.
-          </PhraseSectionDescription>
+          </PhraseSectionIntro>
         </PhraseSectionRow>
         <PhraseSectionRow>
-          <Img src={rocket} alt="figure_impulsamos_tu_negocio" />
+          <PSImgContainer>
+            <Img src={rocket} alt="Image of rocket with colors lines" />
+          </PSImgContainer>
         </PhraseSectionRow>
       </SectionWrapper>
     </SectionContainer>

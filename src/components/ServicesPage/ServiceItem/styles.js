@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "../../../styles/globalStyles";
+import { colors } from "styles/colors";
 
 export const ServiceItemWrapper = styled.li`
   display: flex;
@@ -16,7 +16,7 @@ export const ServiceItemWrapper = styled.li`
   border-radius: 10px;
   transition: all 0.2s ease-in;
   :hover {
-    background-color: ${Colors["primary-purple"]};
+    background-color: ${colors["primary-purple"]};
     color: white;
   }
   @media screen and (max-width: 768px) {

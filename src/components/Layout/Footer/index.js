@@ -1,5 +1,4 @@
-import React from 'react'
-import { Button } from '../../../styles/globalStyles'
+import React from "react";
 import {
   FaRegAddressBook,
   FaPhoneAlt,
@@ -7,8 +6,9 @@ import {
   FaRegEnvelope,
   FaFacebook,
   FaInstagram,
-  FaLinkedin
-} from 'react-icons/fa'
+  FaLinkedin,
+} from "react-icons/fa";
+import { Button } from "components/Common/buttons.style";
 import {
   FooterContainer,
   FooterWrapper,
@@ -32,12 +32,12 @@ import {
   SocialMediaWrap,
   WebsiteRights,
   SocialIcons,
-  SocialIconLink
-} from './styles'
+  SocialIconLink,
+} from "./styles";
 
-import logo from 'assets/img/logo-mobile.svg'
+import logo from "assets/img/logo-mobile.svg";
 
-function Footer () {
+function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -45,12 +45,12 @@ function Footer () {
           <FooterSubHeading>
             ¿Interesado en nuestros servicios?
           </FooterSubHeading>
-          <FooterButton>Contáctanos</FooterButton>
+          <Button big>Contáctanos</Button>
         </FooterSubscription>
         <FooterContactAndNav>
           <ContactInfoContainer>
-            <NavLogo to='/'>
-              <NavIcon src={logo} alt='catech_logo'/>
+            <NavLogo to="/">
+              <NavIcon src={logo} alt="catech_logo" />
               CA<BoldSpan>TECH</BoldSpan>
             </NavLogo>
             <ContactInfoWrapper>
@@ -62,21 +62,15 @@ function Footer () {
               </ContactInfoItem>
               <ContactInfoItem>
                 <FaPhoneAlt />
-                <FooterSubText>
-                  +503 2351 1960
-                </FooterSubText>
+                <FooterSubText>+503 2351 1960</FooterSubText>
               </ContactInfoItem>
               <ContactInfoItem>
                 <FaWhatsapp />
-                <FooterSubText>
-                  +503 7496 3874
-                </FooterSubText>
+                <FooterSubText>+503 7496 3874</FooterSubText>
               </ContactInfoItem>
               <ContactInfoItem>
                 <FaRegEnvelope />
-                <FooterSubText>
-                  info@catech.com.sv
-                </FooterSubText>
+                <FooterSubText>info@catech.com.sv</FooterSubText>
               </ContactInfoItem>
             </ContactInfoWrapper>
           </ContactInfoContainer>
@@ -84,19 +78,21 @@ function Footer () {
             <FooterLinksWrapper hasMarginRight>
               <FooterLinkItems>
                 <FooterLinkTitle>NOSOTROS</FooterLinkTitle>
-                <FooterLink to='/'>¿Quiénes somos?</FooterLink>
-                <FooterLink to='/'>¿Por qué nosotros?</FooterLink>
-                <FooterLink to='/'>Nuestros Procesos</FooterLink>
+                <FooterLink to="/">¿Quiénes somos?</FooterLink>
+                <FooterLink to="/">¿Por qué nosotros?</FooterLink>
+                <FooterLink to="/">Nuestros Procesos</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
             <FooterLinksWrapper hasMarginLeft>
               <FooterLinkItems>
                 <FooterLinkTitle>SERVICIOS</FooterLinkTitle>
-                <FooterLink to='/sign-up'>Desarrollo de Sitios web</FooterLink>
-                <FooterLink to='/'>Desarrollo de Aplicaciones móviles</FooterLink>
-                <FooterLink to='/'>Marketing en redes sociales</FooterLink>
-                <FooterLink to='/'>Branding</FooterLink>
-                <FooterLink to='/'>Preguntas</FooterLink>
+                <FooterLink to="/sign-up">Desarrollo de Sitios web</FooterLink>
+                <FooterLink to="/">
+                  Desarrollo de Aplicaciones móviles
+                </FooterLink>
+                <FooterLink to="/">Marketing en redes sociales</FooterLink>
+                <FooterLink to="/">Branding</FooterLink>
+                <FooterLink to="/">Preguntas</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
@@ -104,22 +100,24 @@ function Footer () {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-                <FaFacebook/>
+              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-                <FaInstagram/>
+              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
-                <FaLinkedin/>
+              <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+                <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
-            <WebsiteRights>2021©CATECH. Todos los derechos reservados.</WebsiteRights>
+            <WebsiteRights>
+              2021©CATECH. Todos los derechos reservados.
+            </WebsiteRights>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrapper>
     </FooterContainer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

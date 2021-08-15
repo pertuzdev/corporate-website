@@ -1,11 +1,8 @@
 import React from "react";
 
-import {
-  SectionContainer,
-  SectionWrapper,
-  Title,
-  Colors,
-} from "styles/globalStyles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
+import { Title } from "components/common/texts.style";
+import { colors } from "styles/colors";
 
 import { ProjectsWrapper } from "./styles";
 
@@ -16,7 +13,7 @@ export default function ProjectsSection() {
   return (
     <SectionContainer>
       <SectionWrapper>
-        <Title color={Colors["secondary-blue"]} marginBottom>
+        <Title color={colors["secondary-blue"]} marginBottom>
           Nuestro Trabajo
         </Title>
         <ProjectsWrapper>

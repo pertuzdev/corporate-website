@@ -1,14 +1,20 @@
-import React from 'react'
-import { ServicesItemContainer, Img, ServiceDescription, ServiceItemTitle } from './styles'
+import React from "react";
 
-export default function ServicesItem ({ img, altText, title, description }) {
+import Image from "components/Common/Image";
+import {
+  ServicesItemContainer,
+  Img,
+  ServiceDescription,
+  ServiceItemTitle,
+  ServiceImgWrapper,
+} from "./styles";
+
+export default function ServicesItem({ img, altText, title, description }) {
   return (
     <ServicesItemContainer>
-      <Img src={img} alt={altText} />
+      <Image width="124px" height="121.23px" src={img} alt={altText} />
       <ServiceItemTitle>{title}</ServiceItemTitle>
-      <ServiceDescription>
-        {description}
-      </ServiceDescription>
+      <ServiceDescription>{description}</ServiceDescription>
     </ServicesItemContainer>
-  )
+  );
 }

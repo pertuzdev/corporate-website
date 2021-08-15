@@ -1,15 +1,16 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const WhyUsImgWrapper = styled.div`
   max-width: 60%;
   display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
   margin: 100px;
+  margin-top: 0;
   @media screen and (max-width: 768px) {
     margin: 20px 0 0 0;
     order: -1;
   }
-`
+`;
 export const WhyUsRow = styled.div`
   display: flex;
   flex-direction: row;
@@ -20,7 +21,7 @@ export const WhyUsRow = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`
+`;
 export const WhyUsImg = styled.img`
   padding-right: 0;
   border: 0;
@@ -28,11 +29,11 @@ export const WhyUsImg = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 555px;
-`
+`;
 export const WhyUsList = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
 export const WhyUsItem = styled.div`
   display: flex;
   flex-direction: column;
@@ -43,22 +44,22 @@ export const WhyUsItem = styled.div`
   border-radius: 15px;
   padding: 25px 20px;
   flex: 1;
-  max-width: 300px;;
+  max-width: 300px;
   max-height: 200px;
   flex-basis: 100%;
   margin: 20px auto;
   @media screen and (max-width: 640px) {
     padding: 25px 25px;
   }
-`
+`;
 export const WhyUsItemTitle = styled.p`
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 16px;
   color: #514e4e;
   text-align: center;
-`
+`;
 export const WhyUsDescription = styled.p`
   font-size: 0.9rem;
   margin-top: 12px;
-`
+`;

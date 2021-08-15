@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Title } from "components/common/texts.style";
+
 import {
   Colors,
   SectionWrapper,
@@ -34,16 +36,10 @@ export const Img = styled.img`
     height: 101.23px;
   }
 `;
-export const ServiceTitle = styled.p`
-  font-family: "Inter", serif;
-  line-height: 1.1;
+
+export const ServiceTitle = styled(Title)`
   font-size: 38px;
-  text-align: center;
-  font-weight: bold;
-  color: unset;
-  margin-bottom: unset;
   margin: 20px 0;
-  color: #514e4e;
 `;
 export const ServiceDescriptionTxt = styled.p`
   --tw-text-opacity: 1;
@@ -136,21 +132,12 @@ export const StepDesc = styled.p`
   margin-top: 12px;
 `;
 
-export const StepsTitle = styled.p`
-  font-family: "Inter", serif;
-  line-height: 1.1;
+export const StepsTitle = styled(Title)`
   font-size: 28px;
-  text-align: center;
-  font-weight: bold;
-  color: unset;
-  margin-bottom: unset;
   margin: 20px 0;
-  color: #514e4e;
 `;
 
 export const StepsIntro = styled.p`
-  --tw-text-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
   text-align: center;
   margin-top: 1rem;
   font-size: 20px;
@@ -167,16 +154,9 @@ export const Tools = styled.div`
   align-items: center;
 `;
 
-export const ToolsTitle = styled.p`
-  font-family: "Inter", serif;
-  line-height: 1.1;
+export const ToolsTitle = styled(Title)`
   font-size: 28px;
-  text-align: center;
-  font-weight: bold;
-  color: unset;
-  margin-bottom: unset;
   margin: 20px 0;
-  color: #514e4e;
 `;
 export const ToolsIntro = styled.p`
   --tw-text-opacity: 1;

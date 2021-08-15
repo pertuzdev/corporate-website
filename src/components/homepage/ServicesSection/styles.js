@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ServicesList = styled.div`
   display: flex;
   flex-wrap: wrap;
-`
+`;
 export const ServicesItemContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,39 +25,31 @@ export const ServicesItemContainer = styled.div`
     flex-basis: 100%;
     padding: 25px 50px;
   }
-`
+`;
 export const ServiceImgWrapper = styled.div`
-  max-width: 555px;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    margin-top: 20px;
-  }
-`
-export const Img = styled.img`
-  padding-right: 0;
-  border: 0;
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
   width: 124px;
   height: 121.23px;
   @media screen and (max-width: 640px) {
     width: 104px;
-    height: 101.23px;  
+    height: 101.23px;
   }
-`
+`;
+export const Img = styled.img`
+  max-width: 100%;
+`;
 export const ServiceItemTitle = styled.p`
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 16px;
   color: #514e4e;
   text-align: center;
-`
+`;
 export const ServiceDescription = styled.p`
   font-size: 0.9rem;
   margin-top: 12px;
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
