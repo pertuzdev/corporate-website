@@ -8,6 +8,7 @@ import { ServicesList } from "./styles";
 import { SectionContainer, SectionWrapper } from "styles/globalStyles";
 import { Title } from "components/Common/texts.style";
 import { colors } from "styles/colors";
+import Card from "components/Common/Card";
 
 export default function ServicesSection() {
   return (
@@ -18,12 +19,14 @@ export default function ServicesSection() {
         </Title>
         <ServicesList>
           {services.map(({ image, altText, title, description }) => (
-            <ServicesItem
+            <Card
               key={title}
+              width="124px"
+              height="121.23px"
               img={image}
               altText={altText}
               title={title}
-              description={description}
+              desc={description}
             />
           ))}
         </ServicesList>

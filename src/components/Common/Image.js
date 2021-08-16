@@ -7,9 +7,11 @@ export default function Image({
   height = "fit-content",
   src,
   alt = "catech image",
+  isCard = false,
 }) {
+  console.log(isCard, "isCard");
   return (
-    <ImgContainer width={width} height={height}>
+    <ImgContainer width={width} height={height} isCard={isCard}>
       <Img src={src} alt={alt} />
     </ImgContainer>
   );

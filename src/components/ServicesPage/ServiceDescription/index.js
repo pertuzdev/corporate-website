@@ -28,6 +28,7 @@ import {
   ToolItemContainer,
   ToolIcon,
 } from "./styles";
+import Card from "components/Common/Card";
 
 export default function ServiceDescription({
   name,
@@ -53,11 +54,15 @@ export default function ServiceDescription({
           </Text>
           <StepsList>
             {stepsToFollow.map(({ icon, altText, title, desc }) => (
-              <StepItemContainer>
-                <Icon src={icon} alt={altText} />
-                <StepItemTitle>{title}</StepItemTitle>
-                <StepDesc>{desc}</StepDesc>
-              </StepItemContainer>
+              <Card
+                cardWidth="25%"
+                width="214px"
+                height="211.23px"
+                img={icon}
+                altText={altText}
+                title={title}
+                desc={desc}
+              />
             ))}
           </StepsList>
         </Steps>

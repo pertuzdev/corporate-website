@@ -16,6 +16,7 @@ import {
 import img from "assets/img/why-us-image.png";
 import { IconContext } from "react-icons";
 import { FaRegStar, FaRegLightbulb, FaPalette } from "react-icons/fa";
+import Card from "components/Common/Card";
 
 export default function WhyUs() {
   return (
@@ -25,14 +26,12 @@ export default function WhyUs() {
         <WhyUsList>
           <IconContext.Provider value={{ color: colors["primary-purple"] }}>
             <WhyUsRow>
-              <WhyUsItem>
-                <FaRegStar />
-                <WhyUsItemTitle>Excelencia</WhyUsItemTitle>
-                <WhyUsDescription>
-                  Nuestro equipo no solo desarrolla. Resuelve con soluciones de
-                  alto nivel.
-                </WhyUsDescription>
-              </WhyUsItem>
+              <Card
+                img={FaRegStar}
+                altText="Icon"
+                title="Excelencia"
+                desc="Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel."
+              />
               <WhyUsImgWrapper width="309px" height="309px">
                 <Img src={img} alt="CoverImage" />
               </WhyUsImgWrapper>

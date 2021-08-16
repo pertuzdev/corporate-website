@@ -14,7 +14,7 @@ export const WhyUsImgWrapper = styled(ImgContainer)`
 export const WhyUsRow = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   width: 100%;
   @media screen and (max-width: 994px) {
