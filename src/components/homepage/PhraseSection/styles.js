@@ -18,6 +18,7 @@ export const PhraseSectionIntro = styled(Text)`
     font-size: 1.1rem;
   }
 `;
+
 export const PSImgContainer = styled(ImgContainer)`
   max-width: 400px;
   @media screen and (max-width: 1024px) {

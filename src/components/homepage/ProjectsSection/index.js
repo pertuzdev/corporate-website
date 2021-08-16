@@ -8,25 +8,21 @@ import { ProjectsWrapper } from "./styles";
 
 import { projects } from "./ProjectItemData";
 import ProjectItem from "./ProjectItem";
+import Section from "components/Common/Section";
 
 export default function ProjectsSection() {
   return (
-    <SectionContainer>
-      <SectionWrapper>
-        <Title color={colors["secondary-blue"]} marginBottom>
-          Nuestro Trabajo
-        </Title>
-        <ProjectsWrapper>
-          {projects.map((project, index) => (
-            <ProjectItem
-              key={project.title}
-              index={index}
-              amount={projects.length}
-              {...project}
-            />
-          ))}
-        </ProjectsWrapper>
-      </SectionWrapper>
-    </SectionContainer>
+    <Section title="nuestro trabajo" titleColor={colors["secondary-blue"]}>
+      <ProjectsWrapper>
+        {projects.map((project, index) => (
+          <ProjectItem
+            key={project.title}
+            index={index}
+            amount={projects.length}
+            {...project}
+          />
+        ))}
+      </ProjectsWrapper>
+    </Section>
   );
 }

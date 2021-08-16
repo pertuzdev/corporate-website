@@ -7,10 +7,10 @@ export const Title = styled.h2`
   text-align: center;
   font-weight: bold;
   color: ${({ color }) => color || "unset"};
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? "64px" : "unset")};
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? "32px" : "unset")};
   @media screen and (max-width: 640px) {
     font-size: 32px;
-    margin-bottom: ${({ marginBottom }) => (marginBottom ? "40px" : "unset")};
+    margin-bottom: ${({ marginBottom }) => (marginBottom ? "20px" : "unset")};
   }
 `;
 
@@ -18,7 +18,7 @@ export const Text = styled.p`
   color: ${({ color }) => (color ? color : "black")};
   text-align: ${({ left }) => (left ? "left" : "center")};
   margin-top: 1rem;
-  font-size: 20px;
+  font-size: ${({ fontSize }) => fontSize || "20px"};
   font-weight: 500;
   opacity: 0.9;
   max-width: 750px;
