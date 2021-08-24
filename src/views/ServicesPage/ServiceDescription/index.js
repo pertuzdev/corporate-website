@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text } from "components/common/texts.style";
+import { Text } from "components/common/texts.styles";
 import Card from "components/Card";
 
 import {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { SectionContainer, SectionWrapper } from "styles/globalStyles";
-import { Title } from "components/common/texts.style";
+import { Title } from "components/common/texts.styles";
 import { colors } from "styles/colors";
 
 import { ProjectsWrapper } from "./styles";

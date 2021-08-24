@@ -4,7 +4,7 @@ import rocket from "assets/img/rocket.png";
 
 import { PhraseSectionRow, PhraseSectionIntro, PSImgContainer } from "./styles";
 import { SectionContainer, SectionWrapper } from "styles/globalStyles";
-import { Title } from "components/common/texts.style";
+import { Title } from "components/common/texts.styles";
 import { colors } from "styles/colors";
 import { Img } from "components/common/Image.styles";
 import Section from "components/Section";

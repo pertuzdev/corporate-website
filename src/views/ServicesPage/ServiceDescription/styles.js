@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Title } from "components/common/texts.style";
+import { Title } from "components/common/texts.styles";
 
 import {
   Colors,

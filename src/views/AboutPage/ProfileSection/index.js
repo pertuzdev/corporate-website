@@ -2,7 +2,7 @@ import React from "react";
 
 import { colors } from "styles/colors";
 
-import { Text } from "components/common/texts.style";
+import { Text } from "components/common/texts.styles";
 import Image from "components/common/Image";
 
 import {

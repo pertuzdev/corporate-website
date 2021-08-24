@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { colors } from "styles/colors";
 
-import { Title } from "components/common/texts.style";
+import { Title } from "components/common/texts.styles";
 import { SectionContainer, SectionWrapper } from "components/Section/styles";
 
 export const ProfileContainer = styled(SectionContainer)`

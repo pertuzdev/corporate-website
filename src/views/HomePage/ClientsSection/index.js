@@ -2,7 +2,7 @@ import React from "react";
 
 import { colors } from "styles/colors";
 
-import { Title } from "components/common/texts.style";
+import { Title } from "components/common/texts.styles";
 import { SectionWrapper } from "components/Section/styles";
 
 import ClientItem from "./ClientItem";

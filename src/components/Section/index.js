@@ -1,7 +1,7 @@
 import React from "react";
 
 import { SectionContainer, SectionWrapper, SectionHeading } from "./styles";
-import { Title, Text } from "components/common/texts.style";
+import { Title, Text } from "components/common/texts.styles";
 
 export default function Section({
   secColor,

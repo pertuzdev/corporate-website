@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { Text } from "components/common/texts.style";
+import { Text } from "components/common/texts.styles";
 import { SectionContainer } from "components/Section/styles";
-import { Title } from "components/common/texts.style";
+import { Title } from "components/common/texts.styles";
 
 export const ClientsContainer = styled(SectionContainer)`
   width: 100%;

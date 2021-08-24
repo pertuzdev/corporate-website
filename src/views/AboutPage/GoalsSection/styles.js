@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SectionContainer, SectionWrapper } from "components/Section/styles";
-import { Title, Text } from "components/common/texts.style";
+import { Title, Text } from "components/common/texts.styles";
 
 export const GoalsContainer = styled(SectionContainer)`
   width: 90%;

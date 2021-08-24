@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import { Text } from "components/common/texts.style";
+import { Text } from "components/common/texts.styles";
 import { SectionContainer, SectionWrapper } from "components/Section/styles";
 import { Button } from "components/common/buttons.styles";
 

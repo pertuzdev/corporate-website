@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { ImgContainer } from "components/common/Image.styles";
-import { Text } from "components/common/texts.style";
+import { Text } from "components/common/texts.styles";
 
 export const PhraseSectionRow = styled.div`
   display: flex;
