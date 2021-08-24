@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { IconContext } from "react-icons/lib";
-import { Button } from "components/common/buttons.style";
+import { Button } from "components/common/buttons.styles";
 import logo from "assets/img/catech-logo-black.svg";
 
 import {

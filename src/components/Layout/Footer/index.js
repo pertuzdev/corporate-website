@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import { Button } from "components/Common/buttons.style";
+import { Button } from "components/common/buttons.styles";
 import {
   FooterContainer,
   FooterWrapper,

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ImgContainer, Img } from "./Image.style";
+import { ImgContainer, Img } from "./Image.styles";
 
 export default function Image({
   width = "fit-content",
