@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { FaMagento } from "react-icons/fa";
-import { Button } from "components/common/buttons.styles";
+
 import { Link } from "gatsby";
+
 import tw from "twin.macro";
 
+import { colors } from "styles/colors";
+import { Button } from "components/common/buttons.styles";
+
+import { FaMagento } from "react-icons/fa";
+
 export const FooterContainer = styled.footer`
-  background-color: #6937ff;
+  background-color: ${({ color }) => (color ? color : "white")};
 `;
 export const FooterWrapper = styled.div`
   width: 100%;

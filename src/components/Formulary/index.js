@@ -7,7 +7,6 @@ import {
   TextAreaContainer,
   Input,
   Label,
-  InputButton,
   TextArea,
   ButtonContainer,
 } from "./styles";

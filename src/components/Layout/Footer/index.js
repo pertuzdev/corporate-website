@@ -37,9 +37,9 @@ import {
 
 import logo from "assets/img/logo-mobile.svg";
 
-function Footer() {
+function Footer({ footerColor }) {
   return (
-    <FooterContainer>
+    <FooterContainer color={footerColor}>
       <FooterWrapper>
         <FooterSubscription>
           <FooterSubHeading>
