@@ -7,4 +7,5 @@ export const colors = {
   "white-light": "#F7F7F7",
   "white-lighter": "#fafaff",
   "blue-light": "#2ebbff",
+  "error-red": "#d93025",
 };

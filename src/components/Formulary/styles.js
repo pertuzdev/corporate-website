@@ -7,7 +7,7 @@ export const Form = styled.form``;
 export const InputContainer = styled.div`
   position: relative;
   height: 48px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 `;
 
 export const Label = styled.label`
@@ -17,6 +17,17 @@ export const Label = styled.label`
   padding: 0 0.25rem;
   background-color: #fff;
   color: ${colors["gray"]};
+  font-size: 1rem;
+  transition: 0.3s;
+`;
+
+export const Error = styled.p`
+  position: absolute;
+  left: 1rem;
+  bottom: -1.5rem;
+  padding: 0 0.25rem;
+  background-color: #fff;
+  color: ${colors["error-red"]};
   font-size: 1rem;
   transition: 0.3s;
 `;
