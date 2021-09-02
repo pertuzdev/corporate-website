@@ -78,21 +78,25 @@ function Footer({ footerColor }) {
             <FooterLinksWrapper hasMarginRight>
               <FooterLinkItems>
                 <FooterLinkTitle>NOSOTROS</FooterLinkTitle>
-                <FooterLink to="/">¿Quiénes somos?</FooterLink>
-                <FooterLink to="/">¿Por qué nosotros?</FooterLink>
-                <FooterLink to="/">Nuestros Procesos</FooterLink>
+                <FooterLink to="/about/#whoWeAre">¿Quiénes somos?</FooterLink>
+                <FooterLink to="/about/#whyUs">¿Por qué nosotros?</FooterLink>
+                <FooterLink to="/about/#missionAndVission">
+                  Nuestra Misión
+                </FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
             <FooterLinksWrapper hasMarginLeft>
               <FooterLinkItems>
                 <FooterLinkTitle>SERVICIOS</FooterLinkTitle>
-                <FooterLink to="/sign-up">Desarrollo de Sitios web</FooterLink>
-                <FooterLink to="/">
+                <FooterLink to="/services">Desarrollo de Sitios web</FooterLink>
+                <FooterLink to="/services">
                   Desarrollo de Aplicaciones móviles
                 </FooterLink>
-                <FooterLink to="/">Marketing en redes sociales</FooterLink>
-                <FooterLink to="/">Branding</FooterLink>
-                <FooterLink to="/">Preguntas</FooterLink>
+                <FooterLink to="/services">
+                  Marketing en redes sociales
+                </FooterLink>
+                <FooterLink to="/services">Branding</FooterLink>
+                <FooterLink to="/services">Preguntas</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
@@ -100,13 +104,25 @@ function Footer({ footerColor }) {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/catechsv"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/catechsv"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+              <SocialIconLink
+                href="https://www.linkedin.com/company/central-american-technologies-s-a-de-c-v"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>

@@ -226,7 +226,7 @@ export const FooterLink = styled(Link)`
   margin-bottom: 0.5rem;
 
   &:hover {
-    color: #0467fb;
+    color: #e0e0e0;
     transition: 0.3s ease-out;
   }
 `;

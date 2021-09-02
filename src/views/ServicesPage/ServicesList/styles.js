@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "gatsby";
+
 import { colors } from "styles/colors";
 
 import { SectionWrapper, SectionContainer } from "components/Section/styles";
@@ -50,7 +52,7 @@ export const ServiceItemWrapper = styled.li`
     }
   }
 `;
-export const ServiceItemName = styled.a`
+export const ServiceItemName = styled(Link)`
   font-weight: bold;
   font-size: 0.9em;
 `;

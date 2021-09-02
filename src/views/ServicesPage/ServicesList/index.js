@@ -10,30 +10,32 @@ import {
 
 export default function ServicesList({ services, getActualService }) {
   return (
-    <ServicesSectionContainer>
-      <ServicesSectionWrapper>
-        <List>
-          {services.map(
-            ({
-              name = "",
-              description = "",
-              icon = "",
-              tools = [],
-              stepsToFollow = [],
-            }) => (
-              <ServicesItem
-                key={name}
-                name={name}
-                icon={icon}
-                description={description}
-                tools={tools}
-                onServiceClick={getActualService}
-                stepsToFollow={stepsToFollow}
-              />
-            )
-          )}
-        </List>
-      </ServicesSectionWrapper>
-    </ServicesSectionContainer>
+    <>
+      <ServicesSectionContainer>
+        <ServicesSectionWrapper>
+          <List>
+            {services.map(
+              ({
+                name = "",
+                description = "",
+                icon = "",
+                tools = [],
+                stepsToFollow = [],
+              }) => (
+                <ServicesItem
+                  key={name}
+                  name={name}
+                  icon={icon}
+                  description={description}
+                  tools={tools}
+                  onServiceClick={getActualService}
+                  stepsToFollow={stepsToFollow}
+                />
+              )
+            )}
+          </List>
+        </ServicesSectionWrapper>
+      </ServicesSectionContainer>
+    </>
   );
 }

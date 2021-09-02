@@ -13,6 +13,7 @@ import {
   Highlight,
   CoverIntro,
   CoverButton,
+  Link,
 } from "./styles";
 
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -35,7 +36,7 @@ export default function Cover() {
               productos de software.
             </CoverIntro>
           </TextWrapper>
-          <CoverButton primary big>
+          <CoverButton primary big to="contact">
             Contáctanos
           </CoverButton>
         </CoverRow>
@@ -49,14 +50,23 @@ export default function Cover() {
         </CoverRow>
       </CoverWrapper>
       <CoverSocialMedia>
-        <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-          <FaFacebook />
+        <SocialIconLink target="_blank" aria-label="Facebook">
+          <Link href="https://www.facebook.com/catechsv" target="_blank">
+            <FaFacebook />
+          </Link>
         </SocialIconLink>
-        <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-          <FaInstagram />
+        <SocialIconLink target="_blank" aria-label="Instagram">
+          <Link href="https://www.instagram.com/catechsv" target="_blank">
+            <FaInstagram />
+          </Link>
         </SocialIconLink>
-        <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-          <FaLinkedin />
+        <SocialIconLink target="_blank" aria-label="LinkedIn">
+          <Link
+            href="https://www.linkedin.com/company/central-american-technologies-s-a-de-c-v"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </Link>
         </SocialIconLink>
       </CoverSocialMedia>
     </CoverContainer>

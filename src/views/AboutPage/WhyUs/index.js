@@ -14,35 +14,38 @@ import { FaRegStar, FaRegLightbulb, FaPalette } from "react-icons/fa";
 
 export default function WhyUs() {
   return (
-    <Section title="¿Por qué nosotros?">
-      <WhyUsList>
-        <IconContext.Provider value={{ color: colors["primary-purple"] }}>
-          <WhyUsRow>
+    <>
+      <div id="whyUs"></div>
+      <Section title="¿Por qué nosotros?">
+        <WhyUsList>
+          <IconContext.Provider value={{ color: colors["primary-purple"] }}>
+            <WhyUsRow>
+              <Card
+                img={FaRegStar}
+                altText="Icon"
+                title="Excelencia"
+                desc="Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel."
+              />
+              <WhyUsImgWrapper width="309px" height="309px">
+                <Img src={img} alt="CoverImage" />
+              </WhyUsImgWrapper>
+              <Card
+                img={FaRegLightbulb}
+                altText="Icon"
+                title="Innovación"
+                desc="Queremos ir un paso más allá, creando productos que hagan una
+                  diferencia, que innoven."
+              />
+            </WhyUsRow>
             <Card
-              img={FaRegStar}
+              img={FaPalette}
               altText="Icon"
-              title="Excelencia"
-              desc="Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel."
+              title="Creatividad"
+              desc="Somos un equipo creativo que busca que tu idea sea única."
             />
-            <WhyUsImgWrapper width="309px" height="309px">
-              <Img src={img} alt="CoverImage" />
-            </WhyUsImgWrapper>
-            <Card
-              img={FaRegLightbulb}
-              altText="Icon"
-              title="Innovación"
-              desc="Queremos ir un paso más allá, creando productos que hagan una
-                diferencia, que innoven."
-            />
-          </WhyUsRow>
-          <Card
-            img={FaPalette}
-            altText="Icon"
-            title="Creatividad"
-            desc="Somos un equipo creativo que busca que tu idea sea única."
-          />
-        </IconContext.Provider>
-      </WhyUsList>
-    </Section>
+          </IconContext.Provider>
+        </WhyUsList>
+      </Section>
+    </>
   );
 }

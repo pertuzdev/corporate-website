@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
+import { Link } from "gatsby";
+
 import { colors } from "styles/colors";
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   border-radius: 6px;
   background: ${({ primary }) => (primary ? colors["primary-purple"] : "#fff")};
   white-space: nowrap;

@@ -61,7 +61,10 @@ export const CoverSocialMedia = styled.ul`
 
 export const SocialIconLink = styled.li`
   ${tw`text-gray-500 text-2xl mr-4`}
+  cursor: pointer;
 `;
+
+export const Link = styled.a``;
 
 export const TextWrapper = styled.div`
   ${tw`mt-4`};
