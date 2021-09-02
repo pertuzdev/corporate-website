@@ -24,21 +24,3 @@ export const Column = styled.div`
     flex-basis: 100%;
   }
 `;
-
-export const Title = styled.p`
-  font-size: 36px;
-  line-height: 1.48;
-  margin-bottom: 70px;
-  font-weight: bold;
-`;
-
-export const Text = styled.p`
-  font-size: 14px;
-  line-height: 1em;
-  margin-bottom: 15px;
-  color: rgb(26, 22, 49);
-`;
-
-export const List = styled.ul``;
-
-export const ItemList = styled.li``;
