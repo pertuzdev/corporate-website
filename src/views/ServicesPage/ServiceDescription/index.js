@@ -35,8 +35,9 @@ export default function ServiceDescription({
         <ServiceSteps>
           <ServiceStepsTitle>¿Cómo procedemos?</ServiceStepsTitle>
           <Text>
-            We take care of every project with our standardized method,
-            providing clear process from the beginning until final delivery.
+            Cuidamos cada parte del proyecto con metodologías ágiles, que nos
+            permite entregar productos de valor con transparencia y comunicación
+            asertiva entre nuestros colaboradores y clientes en todo el proceso.
           </Text>
           <ServiceStepsList>
             {stepsToFollow.map((step) => {
