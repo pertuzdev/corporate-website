@@ -60,22 +60,24 @@ export default function ServiceDescription({
             })}
           </ServiceStepsList>
         </ServiceSteps>
-        <ServiceTools>
-          <ServiceToolsTitle>Herramientas</ServiceToolsTitle>
-          <Text>
-            Ocupamos las mejores herramientas en el desarrollo de software
-          </Text>
-          <ServiceToolsList>
-            {tools.map((tool) => (
-              <ToolItemContainer>
-                <ToolIcon
-                  src={tool}
-                  alt={"Logo de herramienta de desarrollo de software"}
-                />
-              </ToolItemContainer>
-            ))}
-          </ServiceToolsList>
-        </ServiceTools>
+        {tools && Object.keys(tools) === 0 && (
+          <ServiceTools>
+            <ServiceToolsTitle>Herramientas</ServiceToolsTitle>
+            <Text>
+              Ocupamos las mejores herramientas en el desarrollo de software
+            </Text>
+            <ServiceToolsList>
+              {tools.map((tool) => (
+                <ToolItemContainer>
+                  <ToolIcon
+                    src={tool}
+                    alt={"Logo de herramienta de desarrollo de software"}
+                  />
+                </ToolItemContainer>
+              ))}
+            </ServiceToolsList>
+          </ServiceTools>
+        )}
       </SectionDescriptionWrapper>
     </ServiceDescriptionSC>
   );

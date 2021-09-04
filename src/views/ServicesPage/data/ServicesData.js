@@ -90,7 +90,7 @@ const webDevelopment = {
     {
       title: "Web Development",
       desc:
-        "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores web hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor.",
+        "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor.",
       icon: stepDev,
       altText: "icon for dev step",
     },
@@ -157,7 +157,7 @@ const appDevelopment = {
     {
       title: "Web Development",
       desc:
-        "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores web hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor.",
+        "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor.",
       icon: stepDev,
       altText: "icon for dev step",
     },
@@ -202,7 +202,6 @@ const digitalMarketing = {
     toolWhatsApp,
     toolGoogleAds,
     toolGoogleAnalytics,
-    toolSlack,
   ],
 };
 
@@ -215,41 +214,28 @@ const branding = {
   worktype: [],
   stepsToFollow: [
     {
-      title: "Meeting with the client - setting objectives and goals",
+      title: "Establecer objetivos",
       desc:
-        "We try to understand all of the client’s requirements in detail to make sure we deliver a project that fits all their needs. With the insights of the customers, we help to align the project assumptions with real user expectations and suggest different options to build the project.",
+        "Intentamos comprender todos los requisitos del cliente en detalle para asegurarnos de entregar un proyecto que se adapte a todas sus necesidades. Con las percepciones de los clientes, procedemos a la conceptualización del branding: valores, fortalezas, pasiones, estilo, personalidad y experiencia de la marca.",
       icon: stepMeeting,
       altText: "icon for meetign step",
     },
     {
-      title: "UX & UI Wireframing",
+      title: "Creación del concepto",
       desc:
-        "Elaniin’s UX & UI Experts are highly qualified and willing to make an awesome design for your project. During this stage, our team suggests a few sketches with preliminary design ideas (wireframes) to visualize data structures and represent UI features.",
+        "Los expertos en branding de CATECH mejoran y ayudan a definir lo que su empresa hace mejor, de una manera que lo hace irresistible para sus clientes. Trabajamos codo a codo con nuestros clientes para desarrollar y evaluar ideas juntos.",
       icon: stepUIUX,
       altText: "icon for UI&UX step",
     },
     {
-      title: "Web Development",
+      title: "Branding Efectivo",
       desc:
-        "With the approved flowchart, it’s time for our web developers to make their magic! The development process starts with all the previously discussed graphic elements, content and design. Our team sets a deadline for the project delivery.",
+        "Una vez aprobado el concepto, el equipo procede a la creación del sistema de identidad de marca. Ofrecemos una marca coherente, significativa, que se puede adquirir y que se puede recordar.",
       icon: stepDev,
       altText: "icon for dev step",
     },
   ],
-  tools: [
-    toolCss,
-    toolFigma,
-    toolFirebase,
-    toolHTML,
-    toolJava,
-    toolJS,
-    toolMysql,
-    toolNodejs,
-    toolPython,
-    toolReactjs,
-    toolVue,
-    toolWordpress,
-  ],
+  tools: [],
 };
 
 export const data = [
