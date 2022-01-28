@@ -8,7 +8,7 @@ import Section from "components/Section";
 
 import { WhyUsImgWrapper, WhyUsList, WhyUsRow } from "./styles";
 
-import img from "assets/img/why-us-image.png";
+import img from "assets/img/aboutpage/why-us-image.png";
 import { IconContext } from "react-icons";
 import { FaRegStar, FaRegLightbulb, FaPalette } from "react-icons/fa";
 

@@ -1,34 +1,33 @@
 import React from "react";
 
-import webIcon from "assets/img/web-icon.svg";
-import appIcon from "assets/img/app-icon.svg";
-import brandingIcon from "assets/img/branding-icon.svg";
-import marketingIcon from "assets/img/marketing-icon.svg";
+import webIcon from "assets/img/services-icons/web-icon.svg";
+import appIcon from "assets/img/services-icons/app-icon.svg";
+import brandingIcon from "assets/img/services-icons/branding-icon.svg";
+import marketingIcon from "assets/img/services-icons/marketing-icon.svg";
 
-import stepMeeting from "assets/img/steps-empathize.svg";
-import stepUIUX from "assets/img/step-2.svg";
-import stepDev from "assets/img/execution.svg";
+import stepMeeting from "assets/img/servicespage/steps-empathize.svg";
+import stepUIUX from "assets/img/servicespage/step-2.svg";
+import stepDev from "assets/img/servicespage/execution.svg";
 
-import toolCss from "assets/img/tool-css.png";
-import toolFigma from "assets/img/tool-figma.png";
-import toolFirebase from "assets/img/tool-firebase.png";
-import toolHTML from "assets/img/tool-html.png";
-import toolJava from "assets/img/tool-java.png";
-import toolJS from "assets/img/tool-js.png";
-import toolMysql from "assets/img/tool-mysql.png";
-import toolNodejs from "assets/img/tool-nodejs.png";
-import toolPython from "assets/img/tool-python.png";
-import toolReactjs from "assets/img/tool-reactjs.png";
-import toolVue from "assets/img/tool-vue.png";
-import toolWordpress from "assets/img/tool-wordpress.png";
+import toolCss from "assets/img/tools/tool-css.png";
+import toolFigma from "assets/img/tools/tool-figma.png";
+import toolFirebase from "assets/img/tools/tool-firebase.png";
+import toolHTML from "assets/img/tools/tool-html.png";
+import toolJava from "assets/img/tools/tool-java.png";
+import toolJS from "assets/img/tools/tool-js.png";
+import toolMysql from "assets/img/tools/tool-mysql.png";
+import toolNodejs from "assets/img/tools/tool-nodejs.png";
+import toolPython from "assets/img/tools/tool-python.png";
+import toolReactjs from "assets/img/tools/tool-reactjs.png";
+import toolVue from "assets/img/tools/tool-vue.png";
+import toolWordpress from "assets/img/tools/tool-wordpress.png";
 
-import toolFacebook from "assets/img/tool-facebook.png";
-import toolInstagram from "assets/img/tool-instagram.png";
-import toolMessenger from "assets/img/tool-messenger.png";
-import toolWhatsApp from "assets/img/tool-whatsapp.png";
-import toolGoogleAds from "assets/img/tool-google-ads.png";
-import toolGoogleAnalytics from "assets/img/tool-google-analytics.png";
-import toolSlack from "assets/img/tool-slack.png";
+import toolFacebook from "assets/img/tools/tool-facebook.png";
+import toolInstagram from "assets/img/tools/tool-instagram.png";
+import toolMessenger from "assets/img/tools/tool-messenger.png";
+import toolWhatsApp from "assets/img/tools/tool-whatsapp.png";
+import toolGoogleAds from "assets/img/tools/tool-google-ads.png";
+import toolGoogleAnalytics from "assets/img/tools/tool-google-analytics.png";
 
 const webDevelopment = {
   name: "Desarrollo Web",

@@ -6,7 +6,6 @@ import ServiceDescription from "./ServiceDescription";
 
 import { data } from "./data/ServicesData";
 
-import webIcon from "assets/img/web-icon.svg";
 import Section from "components/Section";
 
 export default function Services() {

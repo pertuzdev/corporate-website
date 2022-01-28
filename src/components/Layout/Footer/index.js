@@ -35,7 +35,7 @@ import {
   SocialIconLink,
 } from "./styles";
 
-import logo from "assets/img/logo-mobile.svg";
+import logo from "assets/img/brand-identity/logo-mobile.svg";
 
 function Footer({ footerColor }) {
   return (

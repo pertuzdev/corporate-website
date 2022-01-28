@@ -18,7 +18,7 @@ import {
 
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import img from "assets/img/cover-image.png";
+import img from "assets/img/homepage/cover-image.png";
 import Image from "components/common/Image";
 
 export default function Cover() {

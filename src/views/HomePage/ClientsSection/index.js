@@ -15,8 +15,8 @@ import {
   ClientsList,
 } from "./styles";
 
-import client1 from "assets/img/almacen_alex.png";
-import client2 from "assets/img/variedades-enrique-transparent.png";
+import client1 from "assets/img/clients/almacen_alex.png";
+import client2 from "assets/img/clients/variedades-enrique-transparent.png";
 
 export default function ClientsSection() {
   const clientsLogos = [client2, client2, client2];

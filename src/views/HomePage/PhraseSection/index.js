@@ -1,6 +1,6 @@
 import React from "react";
 
-import rocket from "assets/img/rocket.png";
+import rocket from "assets/img/homepage/rocket.png";
 
 import { PhraseSectionRow, PhraseSectionIntro, PSImgContainer } from "./styles";
 import { SectionContainer, SectionWrapper } from "styles/globalStyles";

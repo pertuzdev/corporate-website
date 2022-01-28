@@ -1,8 +1,8 @@
 import { colors } from "styles/colors";
 
-import firstProjectImg from "assets/img/almacen_alex.png";
-import secondProjectImg from "assets/img/variedades_enrique.jpg";
-import thirdProjectImg from "assets/img/bienes_raices.png";
+import firstProjectImg from "assets/img/clients/almacen_alex.png";
+import secondProjectImg from "assets/img/clients/variedades_enrique.jpg";
+import thirdProjectImg from "assets/img/homepage/bienes_raices.png";
 
 const firstProject = {
   color: colors["blue-light"],

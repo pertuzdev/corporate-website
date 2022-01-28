@@ -14,7 +14,7 @@ import {
   ProfileTextWrapper,
 } from "./styles";
 
-import img from "../../../assets/img/about-profile-img.png";
+import img from "assets/img/aboutpage/about-profile-img.png";
 import Principles from "../Principles";
 
 export default function ProfileSection() {
