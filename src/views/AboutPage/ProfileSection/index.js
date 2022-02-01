@@ -16,19 +16,23 @@ import {
 
 import img from "assets/img/aboutpage/about-profile-img.png";
 import Principles from "../Principles";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function ProfileSection() {
+  const imgSrc = "../../../assets/img/aboutpage/about-profile-img.png";
   return (
     <>
       <div id="whoWeAre"></div>
       <ProfileContainer color={colors["lighter-white"]}>
         <ProfileWrapper>
           <ProfileRow justifyContent="center" maxWidth550 center alignStart>
-            <Image
-              width="455px"
-              height="455px"
-              src={img}
+            <StaticImage
+              src={imgSrc}
               alt="Illustration of person with VR glasses"
+              placeholder="blurred"
+              layout="fixed"
+              width={455}
+              height={455}
             />
           </ProfileRow>
           <ProfileRow

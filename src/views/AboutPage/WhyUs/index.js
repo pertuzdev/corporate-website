@@ -1,5 +1,7 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { colors } from "styles/colors";
 
 import { Img } from "components/common/Image.styles";
@@ -13,6 +15,7 @@ import { IconContext } from "react-icons";
 import { FaRegStar, FaRegLightbulb, FaPalette } from "react-icons/fa";
 
 export default function WhyUs() {
+  const imgSrc = "../../../assets/img/aboutpage/why-us-image.png";
   return (
     <>
       <div id="whyUs"></div>
@@ -27,7 +30,14 @@ export default function WhyUs() {
                 desc="Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel."
               />
               <WhyUsImgWrapper width="309px" height="309px">
-                <Img src={img} alt="CoverImage" />
+                <StaticImage
+                  src={imgSrc}
+                  alt="Illustration of a boy working on a desk with computers"
+                  placeholder="blurred"
+                  layout="fixed"
+                  width={309}
+                  height={309}
+                />
               </WhyUsImgWrapper>
               <Card
                 img={FaRegLightbulb}

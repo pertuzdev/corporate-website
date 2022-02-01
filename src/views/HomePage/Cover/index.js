@@ -1,5 +1,7 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { colors } from "styles/colors";
 
 import {
@@ -22,6 +24,7 @@ import img from "assets/img/homepage/cover-image.png";
 import Image from "components/common/Image";
 
 export default function Cover() {
+  const imgSrc = "../../../assets/img/homepage/cover-image.png";
   return (
     <CoverContainer color={colors["lighter-white"]}>
       <CoverWrapper>
@@ -41,11 +44,13 @@ export default function Cover() {
           </CoverButton>
         </CoverRow>
         <CoverRow maxWidth550 center flexEnd>
-          <Image
-            width="555px"
-            height="555px"
-            src={img}
-            alt="person animated with computer"
+          <StaticImage
+            src={imgSrc}
+            alt="Illustration of person with computer"
+            placeholder="blurred"
+            layout="constrained"
+            width={555}
+            height={555}
           />
         </CoverRow>
       </CoverWrapper>

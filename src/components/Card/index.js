@@ -2,6 +2,8 @@ import React from "react";
 
 import { IconContext } from "react-icons";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 import { Img } from "components/common/Image.styles";
 import {
   CardContainer,
