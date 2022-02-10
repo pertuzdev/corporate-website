@@ -8,7 +8,6 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import { Button } from "components/common/buttons.styles";
 import {
   FooterContainer,
   FooterWrapper,
@@ -35,6 +34,8 @@ import {
   SocialIconLink,
 } from "./styles";
 
+import { Button } from "components/Button";
+
 import logo from "assets/img/brand-identity/logo-mobile.svg";
 
 function Footer({ footerColor }) {
@@ -45,7 +46,9 @@ function Footer({ footerColor }) {
           <FooterSubHeading>
             ¿Interesado en nuestros servicios?
           </FooterSubHeading>
-          <Button big>Contáctanos</Button>
+          <Button big to="/contact">
+            Contáctanos
+          </Button>
         </FooterSubscription>
         <FooterContactAndNav>
           <ContactInfoContainer>

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-import { ImgContainer } from "components/common/Image.styles";
-
-export const ImgWrapper = styled(ImgContainer)`
+export const ImgWrapper = styled.div`
   width: ${({ width }) => (width ? width : "fit-content")};
   height: ${({ height }) => (height ? height : "fit-content")};
   @media screen and (max-width: 640px) {

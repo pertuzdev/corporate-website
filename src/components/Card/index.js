@@ -1,23 +1,12 @@
 import React from "react";
 
-import { IconContext } from "react-icons";
-
-import { StaticImage } from "gatsby-plugin-image";
-
-import { Img } from "components/common/Image.styles";
-import {
-  CardContainer,
-  ImgWrapper,
-  CardDesc,
-  CardTitle,
-  ServiceImgWrapper,
-} from "./styles";
-import { colors } from "styles/colors";
+import { CardContainer, ImgWrapper, CardDesc, CardTitle } from "./styles";
+import { CardImage } from "components/elements/Image";
 
 export default function Card({
   cardWidth,
-  width,
-  height,
+  imgWidth,
+  imgHeight,
   img,
   altText,
   title,
@@ -28,9 +17,12 @@ export default function Card({
   return (
     <CardContainer cardWidth={cardWidth}>
       {typeof img === "string" ? (
-        <ImgWrapper width={width} height={height}>
-          <Img src={img} alt={altText} />
-        </ImgWrapper>
+        <CardImage
+          src={img}
+          alt={altText}
+          width={imgWidth}
+          height={imgHeight}
+        />
       ) : (
         <Icon />
       )}

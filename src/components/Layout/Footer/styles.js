@@ -4,8 +4,7 @@ import { Link } from "gatsby";
 
 import tw from "twin.macro";
 
-import { colors } from "styles/colors";
-import { Button } from "components/common/buttons.styles";
+import { Button } from "components/Button";
 
 import { FaMagento } from "react-icons/fa";
 
