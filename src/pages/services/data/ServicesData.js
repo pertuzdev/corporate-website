@@ -33,7 +33,8 @@ const webDevelopment = {
   id: 1,
   name: "Desarrollo Web",
   icon: webIcon,
-  description:
+  altText: "Icono de servicio de desarrollo web",
+  long_description:
     "El mercado cada vez está más globalizado y la competencia es más fuerte. Seguramente, esa competencia ya tiene su página web profesional " +
     "Tu imagen corporativa y tu página web son la cara visible de tu marca, por eso tienen que ser actuales y potentes. " +
     "Con un buen trabajo con la web, y aplicando algunas técnicas de marketing online, verás como comienzan a contactarte nuevos clientes.",
@@ -98,7 +99,8 @@ const appDevelopment = {
   id: 2,
   name: "Desarrollo de Apps",
   icon: appIcon,
-  description:
+  altText: "Icono de servicio de desarrollo móvil",
+  long_description:
     "Contamos con un equipo especializado en el desarrollo nativo de aplicaciones para " +
     "plataformas iOS y Android. Integramos la tecnología y el diseño para crear una app que satisfaga " +
     "tus objetivos y te represente.",
@@ -163,7 +165,7 @@ const digitalMarketing = {
   id: 3,
   name: "Marketing Digital",
   icon: marketingIcon,
-  description:
+  long_description:
     "Construimos modernas y efectivas campañas con nuestro amplio conocimiento de tecnología, " +
     "cultura y marketing. Implementamos estrategias de Inbound Marketing, remarketing, procesos de seguimiento " +
     "y análisis de métricas.",
@@ -202,7 +204,7 @@ const branding = {
   id: 4,
   name: "Branding",
   icon: brandingIcon,
-  description:
+  long_description:
     "En CATECH creamos la personalidad que tu empresa necesita para conectar con tu público. " +
     "Nuestra meta es verte crecer y que tú marca sea única.",
   worktype: [],

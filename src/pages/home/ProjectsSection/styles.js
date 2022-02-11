@@ -7,7 +7,7 @@ const isPair = (amount) => {
 };
 
 const isFirstInPairLayout = (amount, index) => {
-  console.log("amount: ", amount, "index: ", index);
+  //console.log("amount: ", amount, "index: ", index);
   if (!isPair(amount)) {
     return index === 0;
   } else {
