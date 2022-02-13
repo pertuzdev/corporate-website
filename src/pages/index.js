@@ -2,13 +2,13 @@ import React from "react";
 
 import { colors } from "styles/colors";
 
-import Layout from "components/Layout/layout";
+import Layout from "components/shared/Layout/layout";
 import SEO from "components/seo";
-import PhraseSection from "./home/PhraseSection";
-import ProjectsSection from "./home/ProjectsSection";
-import ClientsSection from "./home/ClientsSection";
-import Cover from "./home/Cover";
-import Services from "./home/ServicesSection";
+import PhraseSection from "components/homePageComponents/PhraseSection";
+import Cover from "components/homePageComponents/Cover";
+import ProjectsSection from "components/homePageComponents/ProjectsSection";
+import ClientsSection from "components/homePageComponents/ClientsSection";
+import Services from "components/homePageComponents/ServicesSection";
 
 const IndexPage = () => (
   <Layout footerColor={colors["primary-purple"]}>
