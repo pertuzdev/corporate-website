@@ -1,6 +1,7 @@
 import React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
 import { colors } from "styles/colors";
 
@@ -21,6 +22,8 @@ import {
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Cover() {
+  const { t, i18n } = useTranslation();
+
   const imgSrc = "../../../assets/img/homepage/cover-image.png";
   return (
     <CoverContainer color={colors["lighter-white"]}>
@@ -28,12 +31,13 @@ export default function Cover() {
         <CoverRow maxWidth550 maxWidth450 center coverHeading flexStart>
           <TextWrapper>
             <CoverTitle>
-              DE LA <Highlight>IDEA</Highlight> A LA REALIDAD
+              <Trans i18nKey="homepage.coverSection.coverPhrase">
+                DE LA <Highlight>IDEA</Highlight> A LA REALIDAD
+              </Trans>
               <Highlight>.</Highlight>
             </CoverTitle>
             <CoverIntro left>
-              Creamos asombrosas estrategias de marketing digital y excelentes
-              productos de software.
+              {t("homepage.coverSection.coverIntro")}
             </CoverIntro>
           </TextWrapper>
           <CoverButton primary big to="contact">

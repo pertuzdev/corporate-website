@@ -7,8 +7,8 @@ import Select from "react-select";
 import {
   ServicesSectionContainer,
   ServicesSectionWrapper,
-  selectStyles,
 } from "components/servicesPageComponents/styles";
+import { selectStyles } from "styles/globalStyles";
 
 import Layout from "components/shared/Layout/layout";
 import Section from "components/shared/Section";

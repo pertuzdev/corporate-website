@@ -77,6 +77,7 @@ export const CoverTitle = styled.h1`
   font-family: "Inter", serif;
   font-weight: bold;
   font-size: 5rem;
+  text-transform: uppercase;
   line-height: 1.1;
   letter-spacing: -3.5px;
   @media screen and (max-width: 994px) {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "gatsby";
+import { Link } from "gatsby-plugin-react-i18next";
 import { colors } from "styles/colors";
 import { Container } from "styles/globalStyles";
 
@@ -103,7 +103,26 @@ export const NavItemBtn = styled.li`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLink = styled(Link)`
+  color: ${colors["primary-purple"]};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-weight: 500;
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
+    }
+  }
+`;
+export const NavLng = styled.div`
   color: ${colors["primary-purple"]};
   display: flex;
   align-items: center;

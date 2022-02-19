@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "home": "Home",
+    "About": "About",
+    "Services": "Services"
+  },
+  "buttons": {
+    "Contact": "Contact",
+    "Send": "Send"
+  },
+  "homepage": {
+    "coverSection": {
+      "coverPhrase": "From <1>idea</1> to reality",
+      "coverIntro": "We create awesome digital marketing strategies and excelents software products"
+    },
+    "servicesSection": {
+      "title": "Services",
+      "webDevelopment": "Your website is your cover letter on the internet, that's why we develop fast, optimal and attractive websites.",
+      "appDevelopment": "We have a team specialized in the native mobile development for iOS and Android platforms.",
+      "digitalMarketing": "We build modern and effective campaigns with our extensive knowledge in tech, culture and marketing.",
+      "branding": "We create the personality that your company needs to connect with your audience. Our goal is see you grow and make your brand unique.",
+      "socialMedia": "We create quality content for your social networks, enhancing your business and increasing its visibility on the network",
+      "consultancy": "We provide advice in our areas of expertise: tech, marketing, design, innovation and digital presence."
+    },
+    "phraseSection": {
+      "title": "We promote your brand",
+      "description": "We create digital content that impacts your customers so they don't stop talking about your brand"
+    },
+    "projectsSection": {
+      "title": "Our work",
+      "almacenalex.title": "Almacen alex",
+      "almacenalex.description": "Wholesale store that wanted a different, youthful and fresh concept for their brand.",
+      "variedadesenrique.title": "Variedades Enrique",
+      "variedadesenrique.description": "Visual Identity renewed to a more modern but elegant tone.",
+      "propapp.title": "Propapp",
+      "propapp.description": "An app for Android and iOS for buying and selling houses"
+    },
+    "clientsSection": {
+      "title": "Clients",
+      "description": "We like build very close relationships with our clients. We believe that dynamic collaboration is the only way to get the job done right"
+    },
+    "footer": {
+      "intro": "Are you interested in our services?",
+      "we": "We",
+      "we.whoarewe": "Who are we?",
+      "we.whyus": "Why us?",
+      "we.mission": "Our mission"
+    }
+  }
+}
