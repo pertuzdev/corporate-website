@@ -1,12 +1,19 @@
 {
   "navbar": {
-    "home": "Home",
-    "About": "About",
-    "Services": "Services"
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios"
   },
   "buttons": {
-    "Contact": "Contact",
-    "Send": "Send"
+    "contact": "Contáctanos",
+    "send": "Enviar"
+  },
+  "form": {
+    "labels": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje"
+    }
   },
   "homepage": {
     "coverSection": {
@@ -14,37 +21,227 @@
       "coverIntro": "Creamos asombrosas estrategias de marketing digital y excelentes productos de software."
     },
     "servicesSection": {
-      "title": "Services",
-      "webDevelopment": "Your website is your cover letter on the internet, that's why we develop fast, optimal and attractive websites.",
-      "appDevelopment": "We have a team specialized in the native mobile development for iOS and Android platforms.",
-      "digitalMarketing": "We build modern and effective campaigns with our extensive knowledge in tech, culture and marketing.",
-      "branding": "We create the personality that your company needs to connect with your audience. Our goal is see you grow and make your brand unique.",
-      "socialMedia": "We create quality content for your social networks, enhancing your business and increasing its visibility on the network",
-      "consultancy": "We provide advice in our areas of expertise: tech, marketing, design, innovation and digital presence."
+      "title": "Servicios",
+      "services": {
+        "webDevelopment": {
+          "title": "Desarrollo Web",
+          "description": "Una página web es la carta de presentación de tu empresa en internet, por eso desarrollamos sitios web que te diferencien, que sean rápidos, óptimos y atractivos."
+        },
+        "appDevelopment": {
+          "title": "Desarrollo de Apps",
+          "description": "Contamos con un equipo especializado en el desarrollo nativo de aplicaciones para plataformas iOS y Android."
+        },
+        "digitalMarketing": {
+          "title": "Marketing Digital",
+          "description": "Construimos campañas modernas y efectivas con nuestro amplio conocimiento en tecnología, cultura y marketing."
+        },
+        "branding": {
+          "title": "Branding",
+          "description": "Creamos la personalidad que tu empresa necesita para conectar con tu público. Nuestra meta es verte crecer y que tú marca sea única."
+        },
+        "socialMedia": {
+          "title": "Redes Sociales",
+          "description": "Nos encargamos de crear contenido de calidad para tus redes sociales potenciando tu negocio y aumentando su visibilidad en la red."
+        },
+        "consultancy": {
+          "title": "Consultoría",
+          "description": "Brindamos asesoría en nuestras áreas de experiencia: tecnología, marketing, diseño, innovación y presencia digital."
+        }
+      }
     },
     "phraseSection": {
-      "title": "We promote your brand",
-      "description": "We create digital content that impacts your customers so they don't stop talking about your brand"
+      "title": "Impulsamos tu marca",
+      "description": "Creamos contenido digital que impacte a tus clientes para que no dejen de hablar de tu marca."
     },
     "projectsSection": {
-      "title": "Our work",
-      "almacenalex.title": "Almacen alex",
-      "almacenalex.description": "Wholesale store that wanted a different, youthful and fresh concept for their brand.",
-      "variedadesenrique.title": "Variedades Enrique",
-      "variedadesenrique.description": "Visual Identity renewed to a more modern but elegant tone.",
-      "propapp.title": "Propapp",
-      "propapp.description": "An app for Android and iOS for buying and selling houses"
+      "title": "Nuestro trabajo",
+      "projects": {
+        "almacenalex": {
+          "title": "Almacén alex",
+          "description": "Tienda mayorista de calzado que quizo un concepto diferente, juvenil y fresco."
+        },
+        "variedadesenrique": {
+          "title": "Variedades Enrique",
+          "description": "Identidad visual renovada a un tono más moderno pero elegante."
+        },
+        "propapp": {
+          "title": "Propapp",
+          "description": "Una aplicación para Android y iOS para la compra y venta de casas."
+        }
+      }
     },
     "clientsSection": {
       "title": "Clients",
-      "description": "We like build very close relationships with our clients. We believe that dynamic collaboration is the only way to get the job done right"
+      "description": "Nos gusta construir relaciones estrechas con nuestros clientes. Creemos que la colaboración dinámica es la única forma de hacer bien el trabajo."
     },
     "footer": {
-      "intro": "Are you interested in our services?",
-      "we": "We",
-      "we.whoarewe": "Who are we?",
-      "we.whyus": "Why us?",
-      "we.mission": "Our mission"
+      "intro": "¿Interesado en nuestros servicios?",
+      "aboutSection": {
+        "title": "Nosotros",
+        "aboutus": "¿Quiénes somos?",
+        "whyus": "¿Por qué nosotros?",
+        "mission": "Nuestra misión"
+      },
+      "servicesSection": {
+        "title": "Servicios",
+        "webDev": "Desarrollo Web",
+        "appDev": "Desarrollo de Apps",
+        "digitalMarketing": "Marketing Digital",
+        "socialMedia": "Redes Sociales",
+        "branding": "Branding",
+        "questions": "Preguntas"
+      }
+    }
+  },
+  "aboutpage": {
+    "profileSection": {
+      "title": "¿<1>Quiénes</1> Somos?",
+      "description": "CATECH es una empresa que nace en El Salvador con el propósito de servir a todo negocio que necesite llevar a cabo la implementación de proyectos de desarrollo de software y marketing digital o requieran renovar su imagen corporativa y digitalizar sus procesos. Nuestro equipo de profesionales cumplirá con sus objetivos de forma satisfactoria ya que priorizamos la creatividad y calidad en nuestro trabajo. Nuestro objetivo es brindarle las herramientas digitales y la asesoría necesaria para empoderarlo en este mundo digital, buscamos que su empresa pueda ser escalable, competitiva y eficiente."
+    },
+    "principlesSection": {
+      "principles": {
+        "passion": "Pasión",
+        "excellence": "Excellence",
+        "authenticity": "Autenticidad"
+      }
+    },
+    "goalsSection": {
+      "missionStatement": {
+        "title": "Misión",
+        "description": "CATECH es una empresa que nace en El Salvador con el propósito de servir a todo negocio que necesite llevar a cabo la implementación de proyectos de desarrollo de software y marketing digital o requieran renovar su imagen corporativa y digitalizar sus procesos. Nuestro equipo de profesionales cumplirá con sus objetivos de forma satisfactoria ya que priorizamos la creatividad y calidad en nuestro trabajo. Nuestro objetivo es brindarle las herramientas digitales y la asesoría necesaria para empoderarlo en este mundo digital, buscamos que su empresa pueda ser escalable, competitiva y eficiente."
+      },
+      "visionStatement": {
+        "title": "Visión",
+        "description": "CATECH es una empresa que nace en El Salvador con el propósito de servir a todo negocio que necesite llevar a cabo la implementación de proyectos de desarrollo de software y marketing digital o requieran renovar su imagen corporativa y digitalizar sus procesos. Nuestro equipo de profesionales cumplirá con sus objetivos de forma satisfactoria ya que priorizamos la creatividad y calidad en nuestro trabajo. Nuestro objetivo es brindarle las herramientas digitales y la asesoría necesaria para empoderarlo en este mundo digital, buscamos que su empresa pueda ser escalable, competitiva y eficiente."
+      }
+    },
+    "whyUsSection": {
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Queremos ir un paso más allá, creando productos que hagan una diferencia, que innoven."
+      },
+      "creativity": {
+        "title": "Creatividad",
+        "description": "Somos un equipo creativo que busca que tu idea sea única."
+      }
+    }
+  },
+  "servicesPage": {
+    "intro": "Todo lo que necesitas para llevar tu negocio al siguiente nivel",
+    "methodology": {
+      "title": "¿Cómo procedemos?",
+      "description": "Cuidamos cada parte del proyecto con metodologías ágiles, que nos permite entregar productos de valor con transparencia y comunicación asertiva entre nuestros colaboradores y clientes en todo el proceso."
+    },
+    "services": {
+      "webDevelopment": {
+        "title": "Desarrollo Web",
+        "description": "El mercado cada vez está más globalizado y la competencia es más fuerte. Seguramente, esa competencia ya tiene su página web profesional. Tu imagen corporativa y tu página web son la cara visible de tu marca, por eso tienen que ser actuales y potentes. Con un buen trabajo con la web, y aplicando algunas técnicas de marketing online, verás como comienzan a contactarte nuevos clientes.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Establecer objetivos",
+            "description": "Intentamos comprender todos los requerimientos del cliente en detalle para asegurarnos de entregar un proyecto que se adapte a todas sus necesidades. Con los conocimientos de los clientes, ayudamos a alinear los supuestos del proyecto con las expectativas reales del usuario y sugerimos diferentes opciones para construir el proyecto."
+          },
+          "2": {
+            "title": "UX & UI Wireframing",
+            "description": "Los expertos en branding de CATECH mejoran y ayudan a definir lo que su empresa hace mejor, de una manera que lo hace irresistible para sus clientes. Trabajamos codo a codo con nuestros clientes para desarrollar y evaluar ideas juntos."
+          },
+          "3": {
+            "title": "Web Development",
+            "description": "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor."
+          }
+        }
+      },
+      "appDevelopment": {
+        "title": "Desarrollo de Apps",
+        "description": "Contamos con un equipo especializado en el desarrollo nativo de aplicaciones para plataformas iOS y Android. Integramos la tecnología y el diseño para crear una app que satisfaga tus objetivos y te represente.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Establecer objetivos",
+            "description": "Intentamos comprender todos los requisitos del cliente en detalle para asegurarnos de entregar un proyecto que se adapte a todas sus necesidades. Con los conocimientos de los clientes, ayudamos a alinear los supuestos del proyecto con las expectativas reales del usuario y sugerimos diferentes opciones para construir el proyecto."
+          },
+          "2": {
+            "title": "UX & UI Wireframing",
+            "description": "Los expertos en UX y UI de Catech están altamente calificados y dispuestos a hacer un diseño increíble para su proyecto. Durante esta etapa, nuestro equipo sugiere algunos bocetos con ideas de diseño preliminares (wireframes) para visualizar estructuras de datos y representar características de la interfaz de usuario."
+          },
+          "3": {
+            "title": "App Development",
+            "description": "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor."
+          }
+        }
+      },
+      "digitalMarketing": {
+        "title": "Marketing Digital",
+        "description": "Construimos campañas modernas y efectivas con nuestro amplio conocimiento en tecnología, cultura y marketing. Implementamos estrategias de Inbound Marketing, remarketing, procesos de seguimiento y análisis de métricas.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Inbound Marketing",
+            "description": "Creamos estrategias de alta calidad con las últimas tendencias tecnológicas, impulsando su marca con campañas atractivas con una Metodología de Inbound Marketing. Nuestro equipo organiza el desempeño comercial estableciendo KPI (o desarrollando medidas o métricas de desempeño) para garantizar los mejores resultados."
+          },
+          "2": {
+            "title": "Presupuesto",
+            "description": "Brindamos un Plan de Presupuesto de Marketing enfocado en las plataformas de redes sociales que el cliente previamente seleccionó. Una vez aprobada la estrategia, configuramos un equipo de estrategas, administradores de contenido y diseñadores para tomar el control de la creación de contenido, el diseño y la atención al cliente de sus canales de redes sociales."
+          },
+          "3": {
+            "title": "Seguimiento de KPI",
+            "description": "Para demostrar la eficacia con la que nuestra empresa está logrando resultados medibles, establecemos diferentes indicadores de desempeño (KPI). Nuestros clientes hacen un seguimiento de estos indicadores y se actualizan constantemente sobre el desempeño de las campañas."
+          }
+        }
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "En CATECH creamos la personalidad que tu empresa necesita para conectar con tu público. Nuestra meta es verte crecer y que tú marca sea única.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Establecer objetivos",
+            "description": "Intentamos comprender todos los requerimientos del cliente en detalle para asegurarnos de entregar un proyecto que se adapte a todas sus necesidades. Con las percepciones de los clientes, procedemos a la conceptualización del branding: valores, fortalezas, pasiones, estilo, personalidad y experiencia de la marca."
+          },
+          "2": {
+            "title": "Creación del concepto",
+            "description": "Los expertos en branding de CATECH mejoran y ayudan a definir lo que su empresa hace mejor, de una manera que lo hace irresistible para sus clientes. Trabajamos codo a codo con nuestros clientes para desarrollar y evaluar ideas juntos."
+          },
+          "3": {
+            "title": "Branding Efectivo",
+            "description": "Una vez aprobado el concepto, el equipo procede a la creación del sistema de identidad de marca. Ofrecemos una marca coherente, significativa, que se puede adquirir y que se puede recordar."
+          }
+        }
+      },
+      "socialMedia": {
+        "title": "Redes Sociales",
+        "description": "Nos encargamos de crear contenido de calidad para tus redes sociales potenciando tu negocio y aumentando su visibilidad en la red.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Establecer objetivos",
+            "description": "Intentamos comprender todos los requerimientos del cliente en detalle para asegurarnos de entregar un proyecto que se adapte a todas sus necesidades. Con las percepciones de los clientes, procedemos a la conceptualización del branding: valores, fortalezas, pasiones, estilo, personalidad y experiencia de la marca."
+          },
+          "2": {
+            "title": "Creación del concepto",
+            "description": "Los expertos en branding de CATECH mejoran y ayudan a definir lo que su empresa hace mejor, de una manera que lo hace irresistible para sus clientes. Trabajamos codo a codo con nuestros clientes para desarrollar y evaluar ideas juntos."
+          },
+          "3": {
+            "title": "Branding Efectivo",
+            "description": "Una vez aprobado el concepto, el equipo procede a la creación del sistema de identidad de marca. Ofrecemos una marca coherente, significativa, que quede en la memoria de tus clientes."
+          }
+        }
+      },
+      "consultancy": {
+        "title": "Consultoría",
+        "description": "Brindamos asesoría en nuestras áreas de experiencia: tecnología, marketing, diseño, innovación y presencia digital."
+      }
+    }
+  },
+  "contactPage": {
+    "intro": "Háblanos de tu proyecto, nosotros hacemos el resto",
+    "suggestions": {
+      "title": "Te sugerimos incluir los siguientes aspectos en tu mensaje:",
+      "suggestions_items": {
+        "0": "Descripción de tu proyecto o necesidad",
+        "1": "¿En cuánto tiempo lo necesitas?",
+        "2": "Tu presupuesto"
+      }
     }
   }
 }

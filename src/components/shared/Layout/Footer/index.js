@@ -1,4 +1,7 @@
 import React from "react";
+
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 import {
   FaRegAddressBook,
   FaPhoneAlt,
@@ -18,7 +21,6 @@ import {
   ContactInfoItem,
   FooterSubText,
   FooterSubHeading,
-  FooterButton,
   FooterLinksContainer,
   FooterLinksWrapper,
   NavLogo,
@@ -39,15 +41,14 @@ import { Button } from "components/shared/Button";
 import logo from "assets/img/brand-identity/logo-mobile.svg";
 
 function Footer({ footerColor }) {
+  const { t } = useTranslation();
   return (
     <FooterContainer color={footerColor}>
       <FooterWrapper>
         <FooterSubscription>
-          <FooterSubHeading>
-            ¿Interesado en nuestros servicios?
-          </FooterSubHeading>
+          <FooterSubHeading>{t("homepage.footer.intro")}</FooterSubHeading>
           <Button big to="/contact">
-            Contáctanos
+            {t("buttons.contact")}
           </Button>
         </FooterSubscription>
         <FooterContactAndNav>
@@ -80,26 +81,43 @@ function Footer({ footerColor }) {
           <FooterLinksContainer>
             <FooterLinksWrapper hasMarginRight>
               <FooterLinkItems>
-                <FooterLinkTitle>NOSOTROS</FooterLinkTitle>
-                <FooterLink to="/about/#whoWeAre">¿Quiénes somos?</FooterLink>
-                <FooterLink to="/about/#whyUs">¿Por qué nosotros?</FooterLink>
+                <FooterLinkTitle>
+                  {t("homepage.footer.aboutSection.title")}
+                </FooterLinkTitle>
+                <FooterLink to="/about/#whoWeAre">
+                  {t("homepage.footer.aboutSection.aboutus")}
+                </FooterLink>
+                <FooterLink to="/about/#whyUs">
+                  {t("homepage.footer.aboutSection.whyus")}
+                </FooterLink>
                 <FooterLink to="/about/#missionAndVission">
-                  Nuestra Misión
+                  {t("homepage.footer.aboutSection.mission")}
                 </FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
             <FooterLinksWrapper hasMarginLeft>
               <FooterLinkItems>
-                <FooterLinkTitle>SERVICIOS</FooterLinkTitle>
-                <FooterLink to="/services">Desarrollo de Sitios web</FooterLink>
+                <FooterLinkTitle>
+                  {t("homepage.footer.servicesSection.title")}
+                </FooterLinkTitle>
                 <FooterLink to="/services">
-                  Desarrollo de Aplicaciones móviles
+                  {t("homepage.footer.servicesSection.webDev")}
                 </FooterLink>
                 <FooterLink to="/services">
-                  Marketing en redes sociales
+                  {t("homepage.footer.servicesSection.appDev")}
                 </FooterLink>
-                <FooterLink to="/services">Branding</FooterLink>
-                <FooterLink to="/services">Preguntas</FooterLink>
+                <FooterLink to="/services">
+                  {t("homepage.footer.servicesSection.digitalMarketing")}
+                </FooterLink>
+                <FooterLink to="/services">
+                  {t("homepage.footer.servicesSection.socialMedia")}
+                </FooterLink>
+                <FooterLink to="/services">
+                  {t("homepage.footer.servicesSection.branding")}
+                </FooterLink>
+                <FooterLink to="/services">
+                  {t("homepage.footer.servicesSection.questions")}
+                </FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>

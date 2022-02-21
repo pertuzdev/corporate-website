@@ -1,6 +1,7 @@
 import React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { PhraseSectionRow, PSImgContainer } from "./styles";
 
@@ -9,16 +10,15 @@ import { colors } from "styles/colors";
 import Section from "components/shared/Section";
 
 export default function PhraseSection() {
+  const { t } = useTranslation();
   const rocket = "../../../assets/img/homepage/rocket.png";
-  const INTRO =
-    "Creamos contenido digital que impacte a tus clientes para que no" +
-    "dejen de hablar de tu marca.";
+
   return (
     <Section
       secColor={colors["white-light"]}
-      title="impulsamos tu marca"
+      title={t("homepage.phraseSection.title")}
       titleColor={colors["secondary-blue"]}
-      secIntro={INTRO}
+      secIntro={t("homepage.phraseSection.description")}
       introSize="1.7rem"
     >
       <PhraseSectionRow>

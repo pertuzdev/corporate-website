@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 import {
   FormContainer,
   InputContainer,
@@ -17,6 +19,7 @@ import { Button } from "components/shared/Button";
 import SuccessMsg from "./formMessages/SuccessMsg";
 
 export default function Form({ onSubmit, validations }) {
+  const { t } = useTranslation();
   const { handleSubmit, handleChange, handleOnBlur, data, submit, errors } =
     useForm({
       validations,
@@ -36,7 +39,7 @@ export default function Form({ onSubmit, validations }) {
           onBlur={handleOnBlur}
         />
         <Label htmlFor="from_name" className="form__label">
-          Nombre
+          {t("form.labels.name")}
         </Label>
         {errors["from_name"] && <Error>{errors["from_name"]}</Error>}
       </InputContainer>
@@ -51,7 +54,7 @@ export default function Form({ onSubmit, validations }) {
           onBlur={handleOnBlur}
         />
         <Label htmlFor="reply_to" className="form__label">
-          Correo
+          {t("form.labels.email")}
         </Label>
         {errors["reply_to"] && <Error>{errors["reply_to"]}</Error>}
       </InputContainer>
@@ -67,7 +70,7 @@ export default function Form({ onSubmit, validations }) {
           onBlur={handleOnBlur}
         />
         <Label htmlFor="message" className="form__label">
-          Mensaje
+          {t("form.labels.message")}
         </Label>
         {errors["message"] && <Error>{errors["message"]}</Error>}
       </TextAreaContainer>

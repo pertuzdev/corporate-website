@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 import {
   ProfilePrinciples,
   PrincipleItem,
@@ -9,19 +11,26 @@ import {
 import { FaHandHoldingHeart } from "react-icons/fa";
 
 const PrinciplesSection = () => {
+  const { t } = useTranslation();
   return (
     <ProfilePrinciples>
       <PrincipleItem>
         <FaHandHoldingHeart />
-        <PrincipleText>Pasión</PrincipleText>
+        <PrincipleText>
+          {t("aboutpage.principlesSection.principles.passion")}
+        </PrincipleText>
       </PrincipleItem>
       <PrincipleItem>
         <FaHandHoldingHeart />
-        <PrincipleText>Excelencia</PrincipleText>
+        <PrincipleText>
+          {t("aboutpage.principlesSection.principles.excellence")}
+        </PrincipleText>
       </PrincipleItem>
       <PrincipleItem>
         <FaHandHoldingHeart />
-        <PrincipleText>Autenticidad</PrincipleText>
+        <PrincipleText>
+          {t("aboutpage.principlesSection.principles.authenticity")}
+        </PrincipleText>
       </PrincipleItem>
     </ProfilePrinciples>
   );

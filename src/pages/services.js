@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import data from "data/data";
-
 import Select from "react-select";
+
+import { graphql } from "gatsby";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
+import data from "data/data";
 
 import {
   ServicesSectionContainer,
@@ -15,29 +18,69 @@ import Section from "components/shared/Section";
 import ServiceDescription from "components/servicesPageComponents/ServiceDescription";
 
 export default function Services() {
+  const { t } = useTranslation();
+
   const { services } = data;
-  const intro =
-    "Todo lo que necesitas para llevar tu negocio al siguiente nivel";
+  const intro = t("servicesPage.intro");
 
   const [options, setOptions] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
+
+  const translate = (transKey, stepsToFollow) => {
+    const methodologyTitle = t(`servicesPage.methodology.title`);
+    const methodologyDescription = t(`servicesPage.methodology.description`);
+
+    const name = t(`servicesPage.services.${transKey}.title`);
+    const longDescription = t(`servicesPage.services.${transKey}.description`);
+
+    const stepsToFollowTrans = stepsToFollow.map((step) => ({
+      ...step,
+      title: t(
+        `servicesPage.services.${transKey}.stepsToFollow.${step.id}.title`
+      ),
+      desc: t(
+        `servicesPage.services.${transKey}.stepsToFollow.${step.id}.description`
+      ),
+    }));
+
+    return {
+      methodologyTitle,
+      methodologyDescription,
+      name,
+      longDescription,
+      stepsToFollowTrans,
+    };
+  };
 
   const renderDescription = () => {
     if (selectedOption) {
       const selectedService = services.find(
         (s) => s.id === selectedOption.value
       );
-      const { name, long_description, icon, worktype, tools, stepsToFollow } =
-        selectedService;
+      const {
+        trans_key: transKey,
+        icon,
+        tools,
+        stepsToFollow,
+      } = selectedService;
+
+      const {
+        methodologyTitle,
+        methodologyDescription,
+        name,
+        longDescription,
+        stepsToFollowTrans,
+      } = translate(transKey, stepsToFollow);
 
       return (
         <ServiceDescription
           name={name}
-          description={long_description}
+          description={longDescription}
           icon={icon}
-          worktype={worktype}
           tools={tools}
-          stepsToFollow={stepsToFollow}
+          stepsToFollow={stepsToFollowTrans}
+          methodologyTitle={methodologyTitle}
+          methodologyDescription={methodologyDescription}
         />
       );
     } else {
@@ -73,3 +116,17 @@ export default function Services() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

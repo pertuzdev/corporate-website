@@ -1,7 +1,7 @@
 import React from "react";
 
 import { graphql } from "gatsby";
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { colors } from "styles/colors";
 
@@ -20,8 +20,6 @@ const IndexPage = ({ data }) => {
     <Layout footerColor={colors["primary-purple"]}>
       <SEO title="Home" />
       <Cover />
-      <Trans>Hi people</Trans>
-      <p>{t("Hi people")}</p>
       <Services />
       <PhraseSection />
       <ProjectsSection />

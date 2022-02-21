@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Text } from "styles/globalStyles";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
+import { Text } from "styles/globalStyles";
 import {
   ContactIntroContainer,
   ContactInfoTitle,
@@ -10,16 +11,21 @@ import {
 } from "./styles";
 
 const ContactIntro = () => {
+  const { t } = useTranslation();
   return (
     <ContactIntroContainer>
-      <ContactInfoTitle marginBottom>
-        Hablanos de tu proyecto, nosotros hacemos el resto
-      </ContactInfoTitle>
-      <Text>Te sugerimos incluir los siguientes aspectos en tu mensaje:</Text>
+      <ContactInfoTitle marginBottom>{t("contactPage.intro")}</ContactInfoTitle>
+      <Text>{t("contactPage.suggestions.title")}</Text>
       <List>
-        <ItemList>- Descripción de tu proyecto o necesidad</ItemList>
-        <ItemList>- ¿En cuánto tiempo lo necesitas?</ItemList>
-        <ItemList>- Tu presupuesto</ItemList>
+        <ItemList>{`- ${t(
+          "contactPage.suggestions.suggestions_items.0"
+        )}`}</ItemList>
+        <ItemList>{`- ${t(
+          "contactPage.suggestions.suggestions_items.1"
+        )}`}</ItemList>
+        <ItemList>{`- ${t(
+          "contactPage.suggestions.suggestions_items.0"
+        )}`}</ItemList>
       </List>
     </ContactIntroContainer>
   );

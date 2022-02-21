@@ -1,9 +1,10 @@
 import React from "react";
 
+import { StaticImage } from "gatsby-plugin-image";
+import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
+
 import { colors } from "styles/colors";
-
 import { Text } from "styles/globalStyles";
-
 import {
   ProfileContainer,
   ProfileRow,
@@ -13,11 +14,10 @@ import {
   ProfileTextWrapper,
 } from "./styles";
 
-import img from "assets/img/aboutpage/about-profile-img.png";
 import PrinciplesSection from "../PrinciplesSection";
-import { StaticImage } from "gatsby-plugin-image";
 
 export default function ProfileSection() {
+  const { t } = useTranslation();
   const imgSrc = "../../../assets/img/aboutpage/about-profile-img.png";
   return (
     <>
@@ -43,20 +43,11 @@ export default function ProfileSection() {
           >
             <ProfileTextWrapper>
               <ProfileTitle marginBottom>
-                ¿<ProfileHighlight>Quiénes</ProfileHighlight> Somos?
+                <Trans i18nKey={"aboutpage.profileSection.title"}>
+                  ¿<ProfileHighlight>Quiénes</ProfileHighlight> Somos?
+                </Trans>
               </ProfileTitle>
-              <Text left>
-                CATECH es una empresa que nace en El Salvador con el propósito
-                de servir a todo negocio que necesite llevar a cabo la
-                implementación de proyectos de desarrollo de software y
-                marketing digital o requieran renovar su imagen corporativa y
-                digitalizar sus procesos. Nuestro equipo de profesionales
-                cumplirá con sus objetivos de forma satisfactoria ya que
-                priorizamos la creatividad y calidad en nuestro trabajo. Nuestro
-                objetivo es brindarle las herramientas digitales y la asesoría
-                necesaria para empoderarlo en este mundo digital, buscamos que
-                su empresa pueda ser escalable, competitiva y eficiente.
-              </Text>
+              <Text left>{t("aboutpage.profileSection.description")}</Text>
             </ProfileTextWrapper>
             <PrinciplesSection />
           </ProfileRow>

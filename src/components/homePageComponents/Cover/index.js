@@ -41,7 +41,7 @@ export default function Cover() {
             </CoverIntro>
           </TextWrapper>
           <CoverButton primary big to="contact">
-            Contáctanos
+            {t("buttons.contact")}
           </CoverButton>
         </CoverRow>
         <CoverRow maxWidth550 center flexEnd>

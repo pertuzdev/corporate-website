@@ -41,6 +41,7 @@ const data = {
   services: [
     {
       id: 1,
+      trans_key: "webDevelopment",
       name: "Desarrollo Web",
       icon: webIcon,
       altText: "Icono de servicio de desarrollo web",
@@ -113,6 +114,7 @@ const data = {
     },
     {
       id: 2,
+      trans_key: "appDevelopment",
       name: "Desarrollo de Apps",
       icon: appIcon,
       altText: "Icono de servicio de desarrollo móvil",
@@ -175,7 +177,7 @@ const data = {
         },
         {
           id: 3,
-          title: "Web Development",
+          title: "App Development",
           desc: "Con el diagrama de flujo aprobado, es hora de que nuestros desarrolladores hagan su magia. El proceso de desarrollo comienza con todos los elementos gráficos, contenido y diseño discutidos anteriormente. Nuestro equipo se comunica durante todo el proceso con nuestros clientes, haciendo entregas iterativas de producto con valor.",
           icon: stepDev,
           altText: "icon for dev step",
@@ -184,6 +186,7 @@ const data = {
     },
     {
       id: 3,
+      trans_key: "digitalMarketing",
       name: "Marketing Digital",
       icon: marketingIcon,
       altText: "Icono de servicio de marketing",
@@ -229,6 +232,7 @@ const data = {
     },
     {
       id: 4,
+      trans_key: "branding",
       name: "Branding",
       icon: brandingIcon,
       altText: "Icono de servicio de branding",
@@ -266,6 +270,7 @@ const data = {
     },
     {
       id: 5,
+      trans_key: "socialMedia",
       name: "Social Media",
       icon: socialMediaIcon,
       altText: "Icono de servicio de social media",
@@ -303,6 +308,7 @@ const data = {
     },
     {
       id: 6,
+      trans_key: "consultancy",
       name: "Consultancy",
       icon: consultingIcon,
       altText: "Icono de servicio de consultoria",
@@ -321,6 +327,7 @@ const data = {
   projects: [
     {
       id: 1,
+      trans_key: "almacenalex",
       color: colors["blue-light"],
       image: firstProjectImg,
       title: "Almacén Alex",
@@ -329,6 +336,7 @@ const data = {
     },
     {
       id: 2,
+      trans_key: "variedadesenrique",
       color: "black",
       image: secondProjectImg,
       title: "Variedades Enrique",
@@ -337,6 +345,7 @@ const data = {
     },
     {
       id: 3,
+      trans_key: "propapp",
       color: "#4dad58",
       image: thirdProjectImg,
       title: "PropApp",

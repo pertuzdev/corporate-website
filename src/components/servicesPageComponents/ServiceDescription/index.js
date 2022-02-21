@@ -24,6 +24,8 @@ export default function ServiceDescription({
   icon,
   tools,
   stepsToFollow,
+  methodologyTitle,
+  methodologyDescription,
 }) {
   return (
     <ServiceDescriptionSC>
@@ -32,12 +34,8 @@ export default function ServiceDescription({
         <ServiceTitle>{name}</ServiceTitle>
         <Text>{description}</Text>
         <ServiceSteps>
-          <ServiceStepsTitle>¿Cómo procedemos?</ServiceStepsTitle>
-          <Text>
-            Cuidamos cada parte del proyecto con metodologías ágiles, que nos
-            permite entregar productos de valor con transparencia y comunicación
-            asertiva entre nuestros colaboradores y clientes en todo el proceso.
-          </Text>
+          <ServiceStepsTitle>{methodologyTitle}</ServiceStepsTitle>
+          <Text>{methodologyDescription}</Text>
           <ServiceStepsList>
             {stepsToFollow.map((step) => {
               if (step) {

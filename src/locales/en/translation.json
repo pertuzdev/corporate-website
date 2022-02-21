@@ -1,12 +1,19 @@
 {
   "navbar": {
     "home": "Home",
-    "About": "About",
-    "Services": "Services"
+    "about": "About",
+    "services": "Services"
   },
   "buttons": {
-    "Contact": "Contact",
-    "Send": "Send"
+    "contact": "Contact",
+    "send": "Send"
+  },
+  "form": {
+    "labels": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    }
   },
   "homepage": {
     "coverSection": {
@@ -15,12 +22,32 @@
     },
     "servicesSection": {
       "title": "Services",
-      "webDevelopment": "Your website is your cover letter on the internet, that's why we develop fast, optimal and attractive websites.",
-      "appDevelopment": "We have a team specialized in the native mobile development for iOS and Android platforms.",
-      "digitalMarketing": "We build modern and effective campaigns with our extensive knowledge in tech, culture and marketing.",
-      "branding": "We create the personality that your company needs to connect with your audience. Our goal is see you grow and make your brand unique.",
-      "socialMedia": "We create quality content for your social networks, enhancing your business and increasing its visibility on the network",
-      "consultancy": "We provide advice in our areas of expertise: tech, marketing, design, innovation and digital presence."
+      "services": {
+        "webDevelopment": {
+          "title": "Web Development",
+          "description": "Your website is your cover letter on the internet, that's why we develop websites that diffenrentiate you, that are fast, optimal and attractive."
+        },
+        "appDevelopment": {
+          "title": "App Development",
+          "description": "We have a team specialized in the native mobile development for iOS and Android platforms."
+        },
+        "digitalMarketing": {
+          "title": "Digital Marketing",
+          "description": "We build modern and effective campaigns with our extensive knowledge in tech, culture and marketing."
+        },
+        "branding": {
+          "title": "Branding",
+          "description": "We create the personality that your company needs to connect with your audience. Our goal is see you grow and make your brand unique."
+        },
+        "socialMedia": {
+          "title": "Social Media",
+          "description": "We create quality content for your social networks, enhancing your business and increasing its visibility on the network"
+        },
+        "consultancy": {
+          "title": "Consultancy",
+          "description": "We provide advice in our areas of expertise: tech, marketing, design, innovation and digital presence."
+        }
+      }
     },
     "phraseSection": {
       "title": "We promote your brand",
@@ -28,23 +55,193 @@
     },
     "projectsSection": {
       "title": "Our work",
-      "almacenalex.title": "Almacen alex",
-      "almacenalex.description": "Wholesale store that wanted a different, youthful and fresh concept for their brand.",
-      "variedadesenrique.title": "Variedades Enrique",
-      "variedadesenrique.description": "Visual Identity renewed to a more modern but elegant tone.",
-      "propapp.title": "Propapp",
-      "propapp.description": "An app for Android and iOS for buying and selling houses"
+      "projects": {
+        "almacenalex": {
+          "title": "Almacén alex",
+          "description": "Wholesale store that wanted a different, youthful and fresh concept for their brand."
+        },
+        "variedadesenrique": {
+          "title": "Variedades Enrique",
+          "description": "Visual Identity renewed to a more modern but elegant tone."
+        },
+        "propapp": {
+          "title": "Propapp",
+          "description": "An app for Android and iOS for buying and selling houses"
+        }
+      }
     },
     "clientsSection": {
       "title": "Clients",
-      "description": "We like build very close relationships with our clients. We believe that dynamic collaboration is the only way to get the job done right"
+      "description": "We like build very close relationships with our clients. We believe that dynamic collaboration is the only way to get the job done right."
     },
     "footer": {
       "intro": "Are you interested in our services?",
-      "we": "We",
-      "we.whoarewe": "Who are we?",
-      "we.whyus": "Why us?",
-      "we.mission": "Our mission"
+      "aboutSection": {
+        "title": "About",
+        "aboutus": "About Us",
+        "whyus": "Why us?",
+        "mission": "Our mission"
+      },
+      "servicesSection": {
+        "title": "Services",
+        "webDev": "Web Development",
+        "appDev": "App Development",
+        "digitalMarketing": "Digital Marketing",
+        "socialMedia": "Social Media",
+        "branding": "Branding",
+        "questions": "Questions"
+      }
+    }
+  },
+  "aboutpage": {
+    "profileSection": {
+      "title": "<1>About</1> Us",
+      "description": "CATECH is a company from El Salvador with the purpose of serving all businesses that need to implement software development or digital marketing projects or as well, renew their corporate image and automate their processes. Our professional team will achieve your goals satisfactorily because we prioritize the creativity and quality in our work. Our goal is to provide you  with the necessary digital tools and the consultancy to empower you in this digital world, we seek that you company can be scalable, competitive and efficient."
+    },
+    "principlesSection": {
+      "principles": {
+        "passion": "Passion",
+        "excellence": "Excellence",
+        "authenticity": "Authenticity"
+      }
+    },
+    "goalsSection": {
+      "missionStatement": {
+        "title": "Mission",
+        "description": "Offer and deliver creative and innovative technological solutions, adaptable to the needs of our clients in El Salvador and Central America, promoting their development and productivity, through a team of highly competitive ICT professionals."
+      },
+      "visionStatement": {
+        "title": "Vision",
+        "description": "To be a competitive company that innovates the region with IT services and products that significantly improve the productivity of SMEs, recognized in the Central American region for the solutions we deliver, generating lasting relationships with customers, suppliers and our people."
+      }
+    },
+    "whyUsSection": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "Our team not only make software. They solves high level solutions"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We want to go one step further, creating products that make the difference, that innovate"
+      },
+      "creativity": {
+        "title": "Creativity",
+        "description": "We are a creative team that seeks to make your idea unique"
+      }
+    }
+  },
+  "servicesPage": {
+    "intro": "Everything you need to take your company to the next level",
+    "methodology": {
+      "title": "How do we proceed?",
+      "description": "We take care of each part od the project with agile methodologies, which allow us to deliver value products with transparency and assertive communication between our collaborators and clients throughout the procces"
+    },
+    "services": {
+      "webDevelopment": {
+        "title": "Web Development",
+        "description": "The market is becoming more global y the competition is stronger. Surely, that comeptition already has its professional website. Your corporate image and your website are the visible face of your brand, so they have to be current and powerful. With a good work on the web and applying some marketing techniques online, you'll see how new clients begin contact you",
+        "stepsToFollow": {
+          "1": {
+            "title": "Setting objectives",
+            "description": "We try to understand all of the client's requirements in detail to make sure of deliver a project that fits all their needs. With all the client's insights, we help to align the project assumptions with real user expectations and suggest different options to build the project"
+          },
+          "2": {
+            "title": "UX & UI Wireframing",
+            "description": "CATECH branding experts improves and helps to define your company does better, in a way that makes it irresistible to your customers. We work side by side with our clients to develop and evaluate ideas together"
+          },
+          "3": {
+            "title": "Web Development",
+            "description": "With the approved flowchart, it’s time for our web developers to make their magic! The development process starts with all the previously discussed graphic elements, content and design. Our team communicates with our clients throughout the process, making iteratives deliveries of valuable products."
+          }
+        }
+      },
+      "appDevelopment": {
+        "title": "App Development",
+        "description": "We have a team specialized in the native mobile development for iOS and Android platforms. We integrate the technology and design to create an app that sastisfy your goals and represents you.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Setting objectives",
+            "description": "We try to understand all of the client's requirements in detail to make sure of deliver a project that fits all their needs. With all the client's insights, we help to align the project assumptions with real user expectations and suggest different options to build the project"
+          },
+          "2": {
+            "title": "UX & UI Wireframing",
+            "description": "CATECH branding experts improves and helps to define your company does better, in a way that makes it irresistible to your customers. We work side by side with our clients to develop and evaluate ideas together"
+          },
+          "3": {
+            "title": "Web Development",
+            "description": "With the approved flowchart, it’s time for our web developers to make their magic! The development process starts with all the previously discussed graphic elements, content and design. Our team communicates with our clients throughout the process, making iteratives deliveries of valuable products."
+          }
+        }
+      },
+      "digitalMarketing": {
+        "title": "Marketing Digital",
+        "description": "We build modern and effective campaigns with our extensive knowledge in tech, culture and marketing. We implement Inbound Marketing strategies, remarketing, monitoring proccess and metric analysis",
+        "stepsToFollow": {
+          "1": {
+            "title": "Inbound Marketing",
+            "description": "We create high queality strategies with the lastest technological trends, boosting your brand with attractive campaigns and an Inbound Marketing Methodology. Our team orchestrates commercial perfomance by setting KPIs (Key Performance Indicator) to ensure the best results."
+          },
+          "2": {
+            "title": "Budget",
+            "description": "We provide a Marketing Budget Plan focused on the social media platforms that the client previously selected. Once the strategy is approved, we set up a team of strategists, content managers and designers to take control of the content creation, design, and customer support of your social media channels"
+          },
+          "3": {
+            "title": "KPI tracking",
+            "description": "To demonstrate how effectively our company is achieving measurable results, we establish different key performance indicators (KPIs). Our clients keep track of these indicators and are constantly updated on the performance of the campaigns."
+          }
+        }
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "In CATECH we create the personality that your company needs to connect with your audience. Our goal is see you grow and make your brand unique.",
+        "stepsToFollow": {
+          "1": {
+            "title": "Setting objectives",
+            "description": "We try to understand all of the client's requirements in detail to make sure of deliver a project that fits all their needs. With the clients's perception we proceed to the conceptualization of the branding: values, strengths, passions, style, personality and brand experience"
+          },
+          "2": {
+            "title": "Creation of the Conncept",
+            "description": "CATECH branding experts improves and helps to define your company does better, in a way that makes it irresistible to your customers. We work side by side with our clients to develop and evaluate ideas together"
+          },
+          "3": {
+            "title": "Branding Efectivo",
+            "description": "Once approved the concept, the team proceed to the creation of the Brand Identity System. We offer a coherent, meaningful brand that rem the memory of your customers "
+          }
+        }
+      },
+      "socialMedia": {
+        "title": "Social Media",
+        "description": "We create quality content for your social networks, enhancing your business and increasing its visibility on the network",
+        "stepsToFollow": {
+          "1": {
+            "title": "Setting objectives",
+            "description": "We try to understand all of the client's requirements in detail to make sure of deliver a project that fits all their needs. With the clients's perception we proceed to the conceptualization of the branding: values, strengths, passions, style, personality and brand experience"
+          },
+          "2": {
+            "title": "Creation of the Conncept",
+            "description": "CATECH branding experts improves and helps to define your company does better, in a way that makes it irresistible to your customers. We work side by side with our clients to develop and evaluate ideas together"
+          },
+          "3": {
+            "title": "Branding Efectivo",
+            "description": "Once approved the concept, the team proceed to the creation of the Brand Identity System. We offer a coherent, meaningful brand that rem the memory of your customers "
+          }
+        }
+      },
+      "consultancy": {
+        "title": "Consultancy",
+        "description": "We provide advice in our areas of expertise: tech, marketing, design, innovation and digital presence."
+      }
+    }
+  },
+  "contactPage": {
+    "intro": "Tell us about your project, we do the rest",
+    "suggestions": {
+      "title": "We suggest you include the following aspects in your message",
+      "suggestions_items": {
+        "0": "Description of your project or need",
+        "1": "How long do you need it?",
+        "2": "Your budget"
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
-import { Link, useI18next, I18nextContext } from "gatsby-plugin-react-i18next";
+import { Link, useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { IconContext } from "react-icons/lib";
@@ -30,6 +30,7 @@ import {
 
 function NavBar() {
   const { languages, language, changeLanguage, navigate } = useI18next();
+  const { t } = useTranslation();
 
   console.log(language, "selectedOption-lng");
 
@@ -96,29 +97,37 @@ function NavBar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLink to="/" onClick={closeMobileMenu}>
-                  Inicio
+                <NavLink to="/" language={language} onClick={closeMobileMenu}>
+                  {t("navbar.home")}
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/about" onClick={closeMobileMenu}>
-                  Nosotros
+                <NavLink
+                  to="/about"
+                  language={language}
+                  onClick={closeMobileMenu}
+                >
+                  {t("navbar.about")}
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/services" onClick={closeMobileMenu}>
-                  Servicios
+                <NavLink
+                  to="/services"
+                  language={language}
+                  onClick={closeMobileMenu}
+                >
+                  {t("navbar.services")}
                 </NavLink>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/contact">
-                    <Button primary>Contáctanos</Button>
+                  <NavBtnLink to="/contact" language={language}>
+                    <Button primary>{t("buttons.contact")}</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/contact">
+                  <NavBtnLink to="/contact" language={language}>
                     <Button onClick={closeMobileMenu} fontBig primary>
-                      Contáctanos
+                      {t("buttons.contact")}
                     </Button>
                   </NavBtnLink>
                 )}

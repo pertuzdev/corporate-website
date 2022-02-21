@@ -1,5 +1,7 @@
 import React from "react";
 
+import { graphql } from "gatsby";
+
 import {
   ContactSC,
   ContactSW,
@@ -16,7 +18,7 @@ import {
   validations,
 } from "components/contactPageComponents/ContactForm/formConfig";
 
-export default function About() {
+export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
@@ -34,3 +36,17 @@ export default function About() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

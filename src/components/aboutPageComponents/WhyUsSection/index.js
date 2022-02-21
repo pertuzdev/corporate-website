@@ -1,6 +1,7 @@
 import React from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { IconContext } from "react-icons";
 import { FaRegStar, FaRegLightbulb, FaPalette } from "react-icons/fa";
@@ -12,6 +13,7 @@ import Section from "components/shared/Section";
 import { WhyUsImgWrapper, WhyUsList, WhyUsRow } from "./styles";
 
 export default function WhyUsSection() {
+  const { t } = useTranslation();
   const imgSrc = "../../../assets/img/aboutpage/why-us-image.png";
   return (
     <>
@@ -23,8 +25,8 @@ export default function WhyUsSection() {
               <Card
                 img={FaRegStar}
                 altText="Icon"
-                title="Excelencia"
-                desc="Nuestro equipo no solo desarrolla. Resuelve con soluciones de alto nivel."
+                title={t("aboutpage.whyUsSection.excellence.title")}
+                desc={t("aboutpage.whyUsSection.excellence.description")}
               />
               <WhyUsImgWrapper>
                 <StaticImage
@@ -39,16 +41,15 @@ export default function WhyUsSection() {
               <Card
                 img={FaRegLightbulb}
                 altText="Icon"
-                title="Innovación"
-                desc="Queremos ir un paso más allá, creando productos que hagan una
-                  diferencia, que innoven."
+                title={t("aboutpage.whyUsSection.innovation.title")}
+                desc={t("aboutpage.whyUsSection.innovation.description")}
               />
             </WhyUsRow>
             <Card
               img={FaPalette}
               altText="Icon"
-              title="Creatividad"
-              desc="Somos un equipo creativo que busca que tu idea sea única."
+              title={t("aboutpage.whyUsSection.creativity.title")}
+              desc={t("aboutpage.whyUsSection.excellence.description")}
             />
           </IconContext.Provider>
         </WhyUsList>

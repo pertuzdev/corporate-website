@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 import data from "data/data";
 
 import { colors } from "styles/colors";
@@ -15,6 +17,7 @@ import List from "components/shared/List";
 import ClientItem from "./ClientItem";
 
 export default function ClientsSection() {
+  const { t } = useTranslation();
   const { clients } = data;
 
   const renderItem = ({ item }) => {
@@ -26,13 +29,10 @@ export default function ClientsSection() {
       <SectionWrapper>
         <ClientsIntro>
           <ClientsTitle color="white" marginBottom>
-            Clientes
+            {t("homepage.clientsSection.title")}
           </ClientsTitle>
           <ClientsDescription color={"white"}>
-            Nos gusta construir relaciones estrechas con nuestros clientes.
-            Creemos que la colaboración dinámica es la única forma de hacer bien
-            el trabajo. Vea lo que dijeron sobre nosotros en las historias de
-            clientes.
+            {t("homepage.clientsSection.description")}
           </ClientsDescription>
         </ClientsIntro>
         <List items={clients} renderItem={renderItem} />

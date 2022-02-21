@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 import {
   GoalsContainer,
   GoalsSectionWrapper,
@@ -11,29 +13,26 @@ import {
 import { colors } from "styles/colors";
 
 export default function GoalsSection() {
+  const { t } = useTranslation();
   return (
     <>
       <div id="missionAndVission"></div>
       <GoalsContainer color={colors["primary-purple"]}>
         <GoalsSectionWrapper>
           <GoalsWrapper>
-            <GoalsTitle color="white">Misión</GoalsTitle>
+            <GoalsTitle color="white">
+              {t("aboutpage.goalsSection.missionStatement.title")}
+            </GoalsTitle>
             <GoalsDescription color="white">
-              Ofrecer y entregar soluciones tecnológicas creativas e
-              innovadoras, adaptables a las necesidades de nuestros clientes en
-              EL Salvador y Centroamerica, fomentando su desarrollo y
-              productividad, mediante un equipo de profesionales en TIC
-              altamente competitivo.
+              {t("aboutpage.goalsSection.missionStatement.description")}
             </GoalsDescription>
           </GoalsWrapper>
           <GoalsWrapper>
-            <GoalsTitle color="white">Visión</GoalsTitle>
+            <GoalsTitle color="white">
+              {t("aboutpage.goalsSection.visionStatement.title")}
+            </GoalsTitle>
             <GoalsDescription color="white">
-              Ser una empresa competitiva que innove a la región en servicios y
-              productos de TI que mejoren notablemente la productividad de las
-              PYMES, reconocida en la región centroamericana, por las soluciones
-              que entregamos, generando relaciones duraderas con clientes,
-              proveedores y nuestra gente.
+              {t("aboutpage.goalsSection.visionStatement.description")}
             </GoalsDescription>
           </GoalsWrapper>
         </GoalsSectionWrapper>
