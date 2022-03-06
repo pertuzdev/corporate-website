@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Default Starter",
-    description:
-      "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
-    author: "@gatsbyjs",
+    title: "CATECH",
+    description: "Corporate website",
+    author: "@pertuzdev",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -33,7 +32,7 @@ module.exports = {
         localeJsonSourceName: `locale`,
         languages: [`en`, `es`],
         defaultLanguage: `en`,
-        siteUrl: `https://corporatewebsitemain.gatsbyjs.io`,
+        siteUrl: `http://localhost:8000/`,
         i18nextOptions: {
           interpolation: {
             escapeValue: false,
