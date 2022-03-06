@@ -31,6 +31,24 @@ export const SectionContainer = styled.section`
   @media screen and (max-width: 768px) {
     padding: 80px 0;
   }
+  ${({ animated }) =>
+    animated &&
+    `
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in both;
+
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  `}
 `;
 export const SectionWrapper = styled.div`
   display: flex;

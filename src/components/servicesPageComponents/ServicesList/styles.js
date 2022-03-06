@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-import {
-  SectionWrapper,
-  SectionContainer,
-} from "components/shared/Section/styles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
 
 export const ServicesSectionContainer = styled(SectionContainer)`
   padding: 50px 0;

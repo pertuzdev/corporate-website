@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-import {
-  SectionWrapper,
-  SectionContainer,
-} from "components/shared/Section/styles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
 import { colors } from "styles/colors";
 
 export const ServicesSectionContainer = styled(SectionContainer)`

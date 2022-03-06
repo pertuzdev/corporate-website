@@ -17,14 +17,29 @@ import Layout from "components/shared/Layout/layout";
 import Section from "components/shared/Section";
 import ServiceDescription from "components/servicesPageComponents/ServiceDescription";
 
-export default function Services() {
+const { services } = data;
+
+export default function Services({ location }) {
   const { t } = useTranslation();
 
-  const { services } = data;
   const intro = t("servicesPage.intro");
 
-  const [options, setOptions] = useState(null);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const options = services.map(({ name, id }) => {
+    return { value: id, label: name };
+  });
+
+  const serviceProp =
+    location.state?.serviceID && location.state?.serviceName
+      ? location.state
+      : null;
+
+  const [selectedOption, setSelectedOption] = useState(
+    serviceProp
+      ? { value: serviceProp.serviceID, label: serviceProp.serviceName }
+      : options[0]
+  );
+
+  console.log(selectedOption, "yupi");
 
   const translate = (transKey, stepsToFollow) => {
     const methodologyTitle = t(`servicesPage.methodology.title`);
@@ -53,10 +68,13 @@ export default function Services() {
   };
 
   const renderDescription = () => {
+    console.log(selectedOption, "yay");
     if (selectedOption) {
       const selectedService = services.find(
         (s) => s.id === selectedOption.value
       );
+
+      //console.log(services, "selectedService");
       const {
         trans_key: transKey,
         icon,
@@ -88,19 +106,11 @@ export default function Services() {
     }
   };
 
-  useEffect(() => {
-    const opts = services.map(({ name, id }) => {
-      return { value: id, label: name };
-    });
-    setOptions(opts);
-    setSelectedOption(opts[0]);
-  }, []);
-
   return (
     <Layout>
-      <Section title={intro} titleMarginBottom={false} />
+      <Section title={intro} titleMarginBottom={false} animated />
       {options ? (
-        <ServicesSectionContainer>
+        <ServicesSectionContainer id="serviceSelect">
           <ServicesSectionWrapper>
             <Select
               styles={selectStyles}

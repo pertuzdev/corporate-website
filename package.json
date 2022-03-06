@@ -27,6 +27,7 @@
     "react-i18next": "^11.15.4",
     "react-icons": "^4.2.0",
     "react-select": "^5.2.2",
+    "react-transition-group": "^4.4.2",
     "vanilla-tilt": "^1.7.0"
   },
   "devDependencies": {

@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
-      <ContactSC>
+      <ContactSC animated>
         <ContactIntro />
         <ContactSW>
           <Column maxWidth="35%">

@@ -100,22 +100,43 @@ function Footer({ footerColor }) {
                 <FooterLinkTitle>
                   {t("homepage.footer.servicesSection.title")}
                 </FooterLinkTitle>
-                <FooterLink to="/services">
+                <FooterLink
+                  to="/services/#serviceSelect"
+                  state={{ serviceID: 1, serviceName: "Web Development" }}
+                >
                   {t("homepage.footer.servicesSection.webDev")}
                 </FooterLink>
-                <FooterLink to="/services">
+                <FooterLink
+                  to="/services/#serviceSelect"
+                  state={{ serviceID: 2, serviceName: "App Development" }}
+                >
                   {t("homepage.footer.servicesSection.appDev")}
                 </FooterLink>
-                <FooterLink to="/services">
+                <FooterLink
+                  to="/services/#serviceSelect"
+                  state={{ serviceID: 3, serviceName: "Digital Marketing" }}
+                >
                   {t("homepage.footer.servicesSection.digitalMarketing")}
                 </FooterLink>
-                <FooterLink to="/services">
-                  {t("homepage.footer.servicesSection.socialMedia")}
-                </FooterLink>
-                <FooterLink to="/services">
+                <FooterLink
+                  to="/services/#serviceSelect"
+                  state={{ serviceID: 4, serviceName: "Branding" }}
+                >
                   {t("homepage.footer.servicesSection.branding")}
                 </FooterLink>
-                <FooterLink to="/services">
+                <FooterLink
+                  to="/services/#serviceSelect"
+                  state={{ serviceID: 5, serviceName: "Social Media" }}
+                >
+                  {t("homepage.footer.servicesSection.socialMedia")}
+                </FooterLink>
+                <FooterLink
+                  to="/services/#serviceSelect"
+                  state={{ serviceID: 6, serviceName: "Consultancy" }}
+                >
+                  {t("homepage.footer.servicesSection.consultancy")}
+                </FooterLink>
+                <FooterLink to="/services/#serviceSelect">
                   {t("homepage.footer.servicesSection.questions")}
                 </FooterLink>
               </FooterLinkItems>

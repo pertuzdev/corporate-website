@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { Text } from "styles/globalStyles";
-import { SectionContainer } from "components/shared/Section/styles";
+import { SectionContainer } from "styles/globalStyles";
 import { Title } from "styles/globalStyles";
 
 export const ClientsContainer = styled(SectionContainer)`

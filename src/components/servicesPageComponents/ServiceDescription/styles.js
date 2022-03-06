@@ -2,11 +2,8 @@ import styled from "styled-components";
 
 import { Title } from "styles/globalStyles";
 
-import {
-  Colors,
-  SectionWrapper,
-  SectionContainer,
-} from "components/shared/Section/styles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
+import { colors } from "styles/colors";
 
 export const ServiceDescriptionSC = styled(SectionContainer)`
   padding-top: 30px;

@@ -22,7 +22,7 @@ export default function ProfileSection() {
   return (
     <>
       <div id="whoWeAre"></div>
-      <ProfileContainer color={colors["lighter-white"]}>
+      <ProfileContainer color={colors["lighter-white"]} animated>
         <ProfileWrapper>
           <ProfileRow justifyContent="center" maxWidth550 center alignStart>
             <StaticImage

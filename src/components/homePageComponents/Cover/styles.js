@@ -2,10 +2,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 import { Text } from "styles/globalStyles";
-import {
-  SectionContainer,
-  SectionWrapper,
-} from "components/shared/Section/styles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
+
 import { Button } from "components/shared/Button";
 
 export const CoverContainer = styled(SectionContainer)`

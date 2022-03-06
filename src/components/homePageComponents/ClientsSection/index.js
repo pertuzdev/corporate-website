@@ -12,7 +12,7 @@ import {
   ClientsDescription,
 } from "./styles";
 
-import { SectionWrapper } from "components/shared/Section/styles";
+import { SectionWrapper } from "styles/globalStyles";
 import List from "components/shared/List";
 import ClientItem from "./ClientItem";
 

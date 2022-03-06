@@ -1,7 +1,12 @@
 import React from "react";
 
-import { SectionContainer, SectionWrapper, SectionHeading } from "./styles";
-import { Title, Text } from "styles/globalStyles";
+import { SectionHeading } from "./styles";
+import {
+  Title,
+  Text,
+  SectionContainer,
+  SectionWrapper,
+} from "styles/globalStyles";
 
 export default function Section({
   secColor,
@@ -11,9 +16,10 @@ export default function Section({
   introSize,
   children,
   titleMarginBottom = true,
+  animated,
 }) {
   return (
-    <SectionContainer color={secColor}>
+    <SectionContainer color={secColor} animated={animated}>
       <SectionWrapper>
         {title ? (
           <SectionHeading marginBottom={titleMarginBottom}>

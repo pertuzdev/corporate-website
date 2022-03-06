@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import {
-  SectionContainer,
-  SectionWrapper,
-} from "components/shared/Section/styles";
+
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
 import { Title, Text } from "styles/globalStyles";
 
 export const GoalsContainer = styled(SectionContainer)`

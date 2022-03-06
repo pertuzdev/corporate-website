@@ -3,15 +3,24 @@ import styled from "styled-components";
 import { colors } from "styles/colors";
 
 import { Title } from "styles/globalStyles";
-import {
-  SectionContainer,
-  SectionWrapper,
-} from "components/shared/Section/styles";
+import { SectionContainer, SectionWrapper } from "styles/globalStyles";
 
 export const ProfileContainer = styled(SectionContainer)`
   padding: 80px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in both;
   @media screen and (max-width: 768px) {
     padding: 40px 0;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 `;
 

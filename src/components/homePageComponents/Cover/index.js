@@ -26,7 +26,7 @@ export default function Cover() {
 
   const imgSrc = "../../../assets/img/homepage/cover-image.png";
   return (
-    <CoverContainer color={colors["lighter-white"]}>
+    <CoverContainer color={colors["lighter-white"]} animated>
       <CoverWrapper>
         <CoverRow maxWidth550 maxWidth450 center coverHeading flexStart>
           <TextWrapper>

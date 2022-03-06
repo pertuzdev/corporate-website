@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { Link } from "gatsby-plugin-react-i18next";
 import { colors } from "styles/colors";
 import { Container } from "styles/globalStyles";
@@ -82,14 +83,9 @@ export const NavItem = styled.li`
   height: 60px;
   border-bottom: 2px solid transparent;
   margin-right: 5px;
-  &:hover {
-    border-bottom: 2px solid #4b59f7;
-  }
+
   @media screen and (max-width: 960px) {
     width: 100%;
-    &:hover {
-      border: none;
-    }
   }
 `;
 
@@ -104,9 +100,11 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${colors["primary-purple"]};
+  color: rgba(0, 0, 0, 0.7);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
@@ -116,10 +114,32 @@ export const NavLink = styled(Link)`
     padding: 2rem;
     width: 100%;
     display: table;
-    &:hover {
-      color: #4b59f7;
-      transition: all 0.3s ease;
+    color: #fff;
+    &:active {
+      color: ${colors["gray-light"]};
     }
+    &:hover {
+      color: #fff !important;
+      ::after {
+        width: 0 !important;
+      }
+    }
+  }
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+    ::after {
+      width: 100%;
+      //transition: width .3s;
+    }
+  }
+
+  ::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: ${colors["primary-purple"]};
+    transition: width 0.3s;
   }
 `;
 export const NavLng = styled.div`

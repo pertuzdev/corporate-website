@@ -70,13 +70,6 @@ function NavBar() {
       );
     }
 
-    const changeLng = async () => {
-      await changeLanguage(selectedOption.value);
-    };
-
-    //changeLng();
-    //if (selectedOption) changeLanguage(selectedOption.value);
-
     setSelectedOption({ value: language, label: LNGS[language] });
   }, [language]);
 

@@ -13,6 +13,8 @@ import ProjectsSection from "components/homePageComponents/ProjectsSection";
 import ClientsSection from "components/homePageComponents/ClientsSection";
 import Services from "components/homePageComponents/ServicesSection";
 
+import { Fade } from "components/animations/Fade";
+
 const IndexPage = ({ data }) => {
   const { t } = useTranslation();
   console.log(data, "data");
@@ -20,6 +22,7 @@ const IndexPage = ({ data }) => {
     <Layout footerColor={colors["primary-purple"]}>
       <SEO title="Home" />
       <Cover />
+      <Fade in={true} />
       <Services />
       <PhraseSection />
       <ProjectsSection />
