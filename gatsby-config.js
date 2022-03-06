@@ -33,7 +33,7 @@ module.exports = {
         localeJsonSourceName: `locale`,
         languages: [`en`, `es`],
         defaultLanguage: `en`,
-        siteUrl: `http://localhost:8000/`,
+        siteUrl: `https://corporatewebsitemain.gatsbyjs.io/`,
         i18nextOptions: {
           interpolation: {
             escapeValue: false,
