@@ -5,4 +5,5 @@ export const StyledList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: ${({ center }) => center && "center"};
 `;

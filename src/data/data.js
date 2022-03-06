@@ -33,7 +33,9 @@ import firstProjectImg from "assets/img/clients/almacen_alex.png";
 import secondProjectImg from "assets/img/clients/variedades_enrique.jpg";
 import thirdProjectImg from "assets/img/homepage/bienes_raices.png";
 
-import client2 from "assets/img/clients/variedades-enrique-transparent.png";
+import client1 from "assets/img/clients/logo-clipart-1.png";
+import client2 from "assets/img/clients/logo-clipart-2.png";
+import client3 from "assets/img/clients/logo-clipart-3.png";
 
 import { colors } from "styles/colors";
 
@@ -354,9 +356,9 @@ const data = {
     },
   ],
   clients: [
-    { id: 1, img: client2 },
+    { id: 1, img: client1 },
     { id: 2, img: client2 },
-    { id: 3, img: client2 },
+    { id: 3, img: client3 },
   ],
 };
 

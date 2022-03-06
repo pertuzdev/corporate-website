@@ -98,6 +98,7 @@ export const CoverIntro = styled(Text)`
   }
   @media screen and (max-width: 768px) {
     font-size: 16px;
+    text-align: center;
   }
 `;
 

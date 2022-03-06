@@ -35,7 +35,7 @@ export default function ClientsSection() {
             {t("homepage.clientsSection.description")}
           </ClientsDescription>
         </ClientsIntro>
-        <List items={clients} renderItem={renderItem} />
+        <List items={clients} renderItem={renderItem} center />
       </SectionWrapper>
     </ClientsContainer>
   );

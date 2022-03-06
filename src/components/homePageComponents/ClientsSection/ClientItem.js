@@ -5,12 +5,7 @@ import { ClientItemContainer } from "./styles";
 export default function ClientItem({ logo }) {
   return (
     <ClientItemContainer>
-      <Image
-        width="220px"
-        height="206.75px"
-        src={logo}
-        alt="Logo of CATECH client"
-      />
+      <Image width="200px" src={logo} alt="Logo of CATECH client" />
     </ClientItemContainer>
   );
 }

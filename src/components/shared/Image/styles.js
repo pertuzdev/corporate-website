@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const StyledImgContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  max-width: ${({ width }) => (width ? width : "fit-content")};
-  max-height: ${({ height }) => (height ? height : "fit-content")};
+  max-width: ${({ width }) => (width ? width : "auto")};
+  max-height: ${({ height }) => (height ? height : "auto")};
 `;
 
 export const StyledCardImgContainer = styled(StyledImgContainer)`
