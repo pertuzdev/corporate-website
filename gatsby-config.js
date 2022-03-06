@@ -1,7 +1,14 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+const siteUrl = process.env.URL || `http://localhost:8000/`;
+
 module.exports = {
   siteMetadata: {
     title: "CATECH",
     description: "Corporate website",
+    siteUrl,
     author: "@pertuzdev",
   },
   plugins: [
@@ -32,7 +39,7 @@ module.exports = {
         localeJsonSourceName: `locale`,
         languages: [`en`, `es`],
         defaultLanguage: `en`,
-        siteUrl: `http://localhost:8000/`,
+        siteUrl,
         i18nextOptions: {
           interpolation: {
             escapeValue: false,
@@ -53,6 +60,7 @@ module.exports = {
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

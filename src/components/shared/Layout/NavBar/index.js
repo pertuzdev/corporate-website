@@ -32,10 +32,6 @@ function NavBar() {
   const { languages, language, changeLanguage, navigate } = useI18next();
   const { t } = useTranslation();
 
-  console.log(language, "selectedOption-lng");
-
-  console.log(options, "options");
-
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [options, setOptions] = useState(null);
@@ -47,15 +43,16 @@ function NavBar() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
+    if (typeof window !== "undefined") {
+      if (window.innerWidth <= 960) {
+        setButton(false);
+      } else {
+        setButton(true);
+      }
     }
   };
 
   const handleChangeLanguage = (lng) => {
-    console.log(lng, "not shy");
     //console.log(changeLanguage, "typeof");
     //setSelectedOption(lng);
     changeLanguage(lng.value);
@@ -75,7 +72,9 @@ function NavBar() {
 
   console.log(languages, "originalPath");
 
-  window.addEventListener("resize", showButton);
+  if (typeof window !== "undefined")
+    window.addEventListener("resize", showButton);
+
   return (
     <>
       <IconContext.Provider value={{ color: "#FFDE11" }}>
