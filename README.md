@@ -6,7 +6,7 @@
   Available here: https://corporatewebsitemain.gatsbyjs.io/
 </h3>
 
-Corporate website with basic sections, available in two languages (english and spanish), and also a functional form.
+Corporate website with basic sections, available in two languages (english and spanish), and also a functional form. Static Site Generator with GatsbyJS!
 
 ## 🎨 Design
 
@@ -29,7 +29,6 @@ The design was made by me taking into account Gestalt & UX principles. The conce
 1.  **Clone the repository**
 
     ```shell
-    # create a new Gatsby site using the default starter
     git clone https://github.com/pertuzdev/corporate-website.git
     ```
 
